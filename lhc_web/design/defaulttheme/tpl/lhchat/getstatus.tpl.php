@@ -415,8 +415,8 @@ var lh_inst  = {
 
           var fragment = this.appendHTML(this.iframe_html);
 
-          document.body.insertBefore(fragment, document.body.childNodes[0]);
-          
+          document.getElementById("lhc_parent").insertBefore(fragment, document.getElementById("lhc_parent").childNodes[0]);
+
           var lhc_obj = this;
           
 		  if (typeof delayShow !== 'undefined') {         		
