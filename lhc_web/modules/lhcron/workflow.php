@@ -39,6 +39,8 @@ echo erLhcoreClassChatWorkflow::mainUnansweredChatWorkflow();
 
 echo "Closed chats - ",erLhcoreClassChatWorkflow::automaticChatClosing(),"\n";
 
+echo "Closed pending chats - ",erLhcoreClassChatWorkflow::automaticPendingChatClosing(),"\n";
+
 echo "Purged chats - ",erLhcoreClassChatWorkflow::automaticChatPurge(),"\n";
 
 foreach (erLhcoreClassChat::getList(array('limit' => 500, 'filter' => array('status' => erLhcoreClassModelChat::STATUS_PENDING_CHAT))) as $chat){

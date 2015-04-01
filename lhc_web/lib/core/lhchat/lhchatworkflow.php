@@ -215,7 +215,38 @@ class erLhcoreClassChatWorkflow {
 
     	return $closedChatsNumber;
     }
-    
+
+    public static function automaticPendingChatClosing() {
+
+      $closedChatsNumber = 0;
+      $timeout = 1;
+      if ($timeout > 0) {
+        $delay = time()-($timeout*60);
+        foreach (erLhcoreClassChat::getList(array('limit' => 500, 'filter' => array('status' => erLhcoreClassModelChat::STATUS_PENDING_CHAT, 'user_status' => erLhcoreClassModelChat::USER_STATUS_CLOSED_CHAT))) as $chat) {
+          $chat->status = erLhcoreClassModelChat::STATUS_CLOSED_CHAT;
+
+          $msg = new erLhcoreClassModelmsg();
+          $msg->msg = erTranslationClassLhTranslation::getInstance()->getTranslation('chat/syncuser','Chat was automatically closed by cron');
+          $msg->chat_id = $chat->id;
+          $msg->user_id = -1;
+
+          $chat->last_user_msg_time = $msg->time = time();
+
+          erLhcoreClassChat::getSession()->save($msg);
+
+          if ($chat->last_msg_id < $msg->id) {
+            $chat->last_msg_id = $msg->id;
+          }
+
+          $chat->updateThis();
+          erLhcoreClassChat::updateActiveChats($chat->user_id);
+          $closedChatsNumber++;
+        }
+      }
+
+      return $closedChatsNumber;
+    }
+
     public static function automaticChatPurge() {
     	
     	$purgedChatsNumber = 0;
