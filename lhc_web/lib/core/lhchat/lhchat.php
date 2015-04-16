@@ -79,7 +79,7 @@ class erLhcoreClassChat {
     	$filter['limit'] = $limit;
     	$filter['offset'] = $offset;
     	$filter['smart_select'] = true;
-    	$filter['sort'] = 'priority DESC, id DESC';
+        $filter['sort'] = 'priority DESC, id ASC';
 
     	if (!empty($filterAdditional)) {
     		$filter = array_merge_recursive($filter,$filterAdditional);
