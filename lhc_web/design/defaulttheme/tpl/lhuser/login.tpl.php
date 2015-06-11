@@ -17,7 +17,7 @@
 
 <div class="form-group">
     <label><?php echo erTranslationClassLhTranslation::getInstance()->getTranslation('user/login','Password');?></label>
-    <input type="password" class="form-control" name="Password" value="" />
+    <input type="password" class="form-control" name="Password" value="" autocomplete="off" />
 </div>
 
 <div class="form-group">
