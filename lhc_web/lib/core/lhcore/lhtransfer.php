@@ -42,13 +42,21 @@ class erLhcoreClassTransfer
 	       		$limitationSQL = ' AND '.$limitation;
 	       	}
 
-	       	$stmt = $db->prepare('SELECT lh_chat.*,lh_transfer.id as transfer_id FROM lh_chat INNER JOIN lh_transfer ON lh_transfer.chat_id = lh_chat.id WHERE transfer_user_id != :transfer_user_id '.$limitationSQL.' ORDER BY lh_transfer.id DESC');
+	        if (isset($params['only_active']) && $params['only_active'] == true) {
+	          $limitationSQL .= ' AND lh_chat.status!=' . erLhcoreClassModelChat::STATUS_CLOSED_CHAT;
+	        }
+
+	        $stmt = $db->prepare('SELECT lh_chat.*,lh_transfer.id as transfer_id FROM lh_chat INNER JOIN lh_transfer ON lh_transfer.chat_id = lh_chat.id WHERE transfer_user_id != :transfer_user_id '.$limitationSQL.' ORDER BY lh_transfer.id DESC');
 	       	$stmt->bindValue( ':transfer_user_id',$currentUser->getUserID());
 	       	$stmt->setFetchMode(PDO::FETCH_ASSOC);
 	       	$stmt->execute();
 	       	$rows = $stmt->fetchAll();
        } else {
-	       	$stmt = $db->prepare('SELECT lh_chat.*,lh_transfer.id as transfer_id FROM lh_chat INNER JOIN lh_transfer ON lh_transfer.chat_id = lh_chat.id WHERE lh_transfer.transfer_to_user_id = :user_id ORDER BY lh_transfer.id DESC');
+	        if (isset($params['only_active']) && $params['only_active'] == true) {
+	            $limitationSQL .= ' AND lh_chat.status!=' . erLhcoreClassModelChat::STATUS_CLOSED_CHAT;
+	        }
+
+	        $stmt = $db->prepare('SELECT lh_chat.*,lh_transfer.id as transfer_id FROM lh_chat INNER JOIN lh_transfer ON lh_transfer.chat_id = lh_chat.id WHERE lh_transfer.transfer_to_user_id = :user_id '.$limitationSQL.' ORDER BY lh_transfer.id DESC');
 	       	$stmt->bindValue( ':user_id',$currentUser->getUserID());
 	       	$stmt->setFetchMode(PDO::FETCH_ASSOC);
 	       	$stmt->execute();

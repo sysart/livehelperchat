@@ -159,7 +159,7 @@ if ($pendingTabEnabled == true) {
 }
 
 // Transfered chats
-$transferchatsUser = erLhcoreClassTransfer::getTransferChats();
+$transferchatsUser = erLhcoreClassTransfer::getTransferChats(array('only_active' => true));
 $lastPendingTransferID = 0;
 if (!empty($transferchatsUser)){
 	    reset($transferchatsUser);
@@ -172,7 +172,7 @@ if (!empty($transferchatsUser)){
 }
 
 // Transfered chats to departments
-$transferchatsDep = erLhcoreClassTransfer::getTransferChats(array('department_transfers' => true));
+$transferchatsDep = erLhcoreClassTransfer::getTransferChats(array('department_transfers' => true, 'only_active' => true));
 if (!empty($transferchatsDep)){
 	reset($transferchatsDep);
 	$chatPending = current($transferchatsDep);
