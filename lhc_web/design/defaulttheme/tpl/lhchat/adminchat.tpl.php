@@ -30,13 +30,17 @@
 					
 		<script type="text/javascript">
 		jQuery('#CSChatMessage-<?php echo $chat->id?>').bind('keydown', 'return', function (evt){
-		    lhinst.addmsgadmin('<?php echo $chat->id?>');
-		    return false;
+			 		lhinst.addmsgadmin('<?php echo $chat->id?>');
+			 		return false;			
 		});
+		
 		jQuery('#CSChatMessage-<?php echo $chat->id?>').bind('keyup', 'up', function (evt){
-			lhinst.editPrevious('<?php echo $chat->id?>');		   
+			 		lhinst.editPrevious('<?php echo $chat->id?>');	
 		});
+		
 		lhinst.initTypingMonitoringAdmin('<?php echo $chat->id?>');
+		
+		lhinst.afterAdminChatInit('<?php echo $chat->id?>');
 		</script>
 
 		<?php include(erLhcoreClassDesign::designtpl('lhchat/part/after_text_area_block.tpl.php')); ?>

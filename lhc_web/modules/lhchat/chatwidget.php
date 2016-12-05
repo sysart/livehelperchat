@@ -4,6 +4,8 @@
 header('P3P:CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"');
 
 $embedMode = false;
+$fullHeight = (isset($Params['user_parameters_unordered']['fullheight']) && $Params['user_parameters_unordered']['fullheight'] == 'true') ? true : false;
+
 $modeAppend = '';
 if ((string)$Params['user_parameters_unordered']['mode'] == 'embed') {
 	$embedMode = true;
@@ -35,6 +37,10 @@ if (isset($Params['user_parameters_unordered']['theme']) && (int)$Params['user_p
 		
 		}
 	}
+}
+
+if ($fullHeight == true) {
+	$modeAppendTheme .= '/(fullheight)/true';
 }
 
 // Paid chat workflow
@@ -92,6 +98,7 @@ $tpl = erLhcoreClassTemplate::getInstance( 'lhchat/chatwidget.tpl.php');
 $tpl->set('referer','');
 $tpl->set('referer_site','');
 $tpl->set('theme',$theme);
+$tpl->set('fullheight',$fullHeight);
 
 $disabled_department = false;
 
@@ -123,6 +130,7 @@ if (is_array($Params['user_parameters_unordered']['department']) && erLhcoreClas
 $tpl->set('disabled_department',$disabled_department);
 $tpl->set('append_mode',$modeAppend);
 $tpl->set('append_mode_theme',$modeAppendTheme);
+
 
 // Start chat field options
 $startData = erLhcoreClassModelChatConfig::fetch('start_chat_data');
@@ -251,7 +259,9 @@ if (isset($Result['theme'])) {
 if (isset($_POST['StartChat']) && $disabled_department === false)
 {
    // Validate post data
-   $Errors = erLhcoreClassChatValidator::validateStartChat($inputData,$startDataFields,$chat,$additionalParams);
+    $Errors = erLhcoreClassChatValidator::validateStartChat($inputData,$startDataFields,$chat,$additionalParams);
+
+	erLhcoreClassChatEventDispatcher::getInstance()->dispatch('chat.before_chat_started', array('chat' => & $chat, 'errors' => & $Errors, 'offline' => (isset($additionalParams['offline']) && $additionalParams['offline'] == true)));
 
    if (count($Errors) == 0 && !isset($_POST['switchLang']))
    {   	
@@ -278,12 +288,12 @@ if (isset($_POST['StartChat']) && $disabled_department === false)
    			if (isset($chatPrefill) && ($chatPrefill instanceof erLhcoreClassModelChat)) {
    				erLhcoreClassChatValidator::updateInitialChatAttributes($chatPrefill, $chat);
    			}
-   			
+
    			erLhcoreClassChatEventDispatcher::getInstance()->dispatch('chat.chat_offline_request',array(
    			'input_data' => $inputData,
    			'chat' => $chat,
    			'prefill' => array('chatprefill' => isset($chatPrefill) ? $chatPrefill : false)));
-   			
+
    			$Result['parent_messages'][] = 'lh_callback:offline_request_cb';
    			$tpl->set('request_send',true);
    		} else {
@@ -349,28 +359,45 @@ if (isset($_POST['StartChat']) && $disabled_department === false)
     	       $responder = erLhAbstractModelAutoResponder::processAutoResponder($chat);
     
     	       if ($responder instanceof erLhAbstractModelAutoResponder) {
-    	       		$chat->wait_timeout = $responder->wait_timeout;
-    	       		$chat->timeout_message = $responder->timeout_message;
-    	       		$chat->wait_timeout_send = 1-$responder->repeat_number;
-    	       		$chat->wait_timeout_repeat = $responder->repeat_number;
-    	       		
-    	       		if ($responder->wait_message != '') {
-    		       		$msg = new erLhcoreClassModelmsg();
-    		       		$msg->msg = trim($responder->wait_message);
-    		       		$msg->chat_id = $chat->id;
-    		       		$msg->name_support = erTranslationClassLhTranslation::getInstance()->getTranslation('chat/startchat','Live Support');
-    		       		$msg->user_id = -2;
-    		       		$msg->time = time()+5;
-    		       		erLhcoreClassChat::getSession()->save($msg);
-    
-    		       		if ($chat->last_msg_id < $msg->id) {
-    		       			$chat->last_msg_id = $msg->id;
-    		       		}
-    	       		}
-    
-    	       		$chat->saveThis();
-    	       		
-    	       		erLhcoreClassChatEventDispatcher::getInstance()->dispatch('chat.auto_responder_triggered',array('chat' => & $chat));
+				   $beforeAutoResponderErrors = array();
+				   erLhcoreClassChatEventDispatcher::getInstance()->dispatch('chat.before_auto_responder_triggered',array('chat' => & $chat, 'errors' => & $beforeAutoResponderErrors));
+
+				   if (empty($beforeAutoResponderErrors)) {
+					   $chat->wait_timeout = $responder->wait_timeout;
+					   $chat->timeout_message = $responder->timeout_message;
+					   $chat->wait_timeout_send = 1 - $responder->repeat_number;
+					   $chat->wait_timeout_repeat = $responder->repeat_number;
+
+					   if ($responder->wait_message != '') {
+						   $msg = new erLhcoreClassModelmsg();
+						   $msg->msg = trim($responder->wait_message);
+						   $msg->chat_id = $chat->id;
+						   $msg->name_support = erTranslationClassLhTranslation::getInstance()->getTranslation('chat/startchat','Live Support');
+						   $msg->user_id = -2;
+						   $msg->time = time() + 5;
+						   erLhcoreClassChat::getSession()->save($msg);
+
+						   if ($chat->last_msg_id < $msg->id) {
+							   $chat->last_msg_id = $msg->id;
+						   }
+					   }
+
+					   $chat->saveThis();
+
+					   erLhcoreClassChatEventDispatcher::getInstance()->dispatch('chat.auto_responder_triggered', array('chat' => & $chat));
+				   } else {
+					   $msg = new erLhcoreClassModelmsg();
+					   $msg->msg = erTranslationClassLhTranslation::getInstance()->getTranslation('chat/adminchat','Auto responder got error').': '.implode('; ', $beforeAutoResponderErrors);
+					   $msg->chat_id = $chat->id;
+					   $msg->user_id = -1;
+					   $msg->time = time();
+
+					   if ($chat->last_msg_id < $msg->id) {
+						   $chat->last_msg_id = $msg->id;
+					   }
+
+					   erLhcoreClassChat::getSession()->save($msg);
+				   }
     	       }
 	       } else {
 	           $chat->status_sub = erLhcoreClassModelChat::STATUS_SUB_START_ON_KEY_UP;
@@ -379,7 +406,7 @@ if (isset($_POST['StartChat']) && $disabled_department === false)
 	       
 	       erLhcoreClassChat::updateDepartmentStats($chat->department);
 	       erLhcoreClassChatEventDispatcher::getInstance()->dispatch('chat.chat_started',array('chat' => & $chat, 'msg' => $messageInitial));
-       	    
+
 	       // Paid chat settings
 	       if (isset($paidChatSettings)) {
 	           erLhcoreClassChatPaid::processPaidChatWorkflow(array(
@@ -543,7 +570,7 @@ if (isset($_POST['r']))
     $tpl->set('referer_site',$_POST['r']);
 }
 
-erLhcoreClassChatEventDispatcher::getInstance()->dispatch('chat.chatwidget',array('tpl' => $tpl, 'params' => & $Params));
+erLhcoreClassChatEventDispatcher::getInstance()->dispatch('chat.chatwidget',array('result' => & $Result, 'tpl' => & $tpl, 'params' => & $Params, 'inputData' => & $inputData));
 
 if (isset($Params['user_parameters_unordered']['sdemo']) && (int)$Params['user_parameters_unordered']['sdemo'] == 'true') {
     $tpl->set('show_demo',true);
@@ -551,6 +578,7 @@ if (isset($Params['user_parameters_unordered']['sdemo']) && (int)$Params['user_p
     $tpl->set('show_demo',false);
 }
 
+$Result['fullheight'] = $fullHeight;
 $Result['content'] = $tpl->fetch();
 $Result['pagelayout'] = 'widget';
 $Result['dynamic_height'] = true;

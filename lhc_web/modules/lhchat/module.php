@@ -269,8 +269,8 @@ $ViewList['usertyping'] = array(
 );
 
 $ViewList['checkchatstatus'] = array(
-    'params' => array('chat_id','hash','dot'),
-    'uparams' => array('mode','theme')
+    'params' => array('chat_id','hash'),
+    'uparams' => array('mode','theme','dot')
 );
 
 $ViewList['transferuser'] = array(
@@ -315,24 +315,24 @@ $ViewList['startchat'] = array (
 
 $ViewList['chatwidget'] = array (
     'params' => array(),
-    'uparams' => array('ua','switchform','operator','theme','vid','sound','hash','hash_resume','mode','offline','leaveamessage','department','priority','chatprefill','survey','sdemo','prod','phash','pvhash'),
+    'uparams' => array('ua','switchform','operator','theme','vid','sound','hash','hash_resume','mode','offline','leaveamessage','department','priority','chatprefill','survey','sdemo','prod','phash','pvhash','fullheight'),
 	'multiple_arguments' => array ( 'department', 'ua', 'prod' )
 );
 
 $ViewList['reopen'] = array(
     'params' => array('chat_id','hash'),
-    'uparams' => array('mode','embedmode','theme'),
+    'uparams' => array('mode','embedmode','theme','fullheight'),
 );
 
 $ViewList['readoperatormessage'] = array(
     'params' => array(),
-    'uparams' => array('operator','theme','priority','vid','department','playsound','ua','survey'),
+    'uparams' => array('operator','theme','priority','vid','department','playsound','ua','survey','fullheight'),
 	'multiple_arguments' => array ( 'department', 'ua' )
 );
 
 $ViewList['chatcheckoperatormessage'] = array(
     'params' => array(),
-    'uparams' => array('tz','operator','theme','priority','vid','count_page','identifier','department','ua','survey','uactiv','wopen'),
+    'uparams' => array('tz','operator','theme','priority','vid','count_page','identifier','department','ua','survey','uactiv','wopen','fullheight'),
 	'multiple_arguments' => array ( 'department','ua' )
 );
 
@@ -370,7 +370,7 @@ $ViewList['bbcodeinsert'] = array(
 
 $ViewList['chatwidgetchat'] = array(
     'params' => array('chat_id','hash'),
-	'uparams' => array('sound','mode','theme','cstarted','survey','pchat')
+	'uparams' => array('sound','mode','theme','cstarted','survey','pchat','fullheight')
 );
 
 $ViewList['userclosechat'] = array(

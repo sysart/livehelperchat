@@ -2,62 +2,6 @@
   <context>
     <name>listchatconfig</name>
     <message>
-      <source/>
-      <translation type="unfinished"/>
-    </message>
-    <message>
-      <source/>
-      <translation type="unfinished"/>
-    </message>
-    <message>
-      <source/>
-      <translation type="unfinished"/>
-    </message>
-    <message>
-      <source>List online operators.</source>
-      <translation type="unfinished"/>
-    </message>
-    <message>
-      <source/>
-      <translation type="unfinished"/>
-    </message>
-    <message>
-      <source/>
-      <translation type="unfinished"/>
-    </message>
-    <message>
-      <source/>
-      <translation type="unfinished"/>
-    </message>
-    <message>
-      <source/>
-      <translation type="unfinished"/>
-    </message>
-    <message>
-      <source/>
-      <translation type="unfinished"/>
-    </message>
-    <message>
-      <source/>
-      <translation type="unfinished"/>
-    </message>
-    <message>
-      <source>Product module is enabled</source>
-      <translation type="unfinished"/>
-    </message>
-    <message>
-      <source/>
-      <translation type="unfinished"/>
-    </message>
-    <message>
-      <source/>
-      <translation type="unfinished"/>
-    </message>
-    <message>
-      <source/>
-      <translation type="unfinished"/>
-    </message>
-    <message>
       <source>How many days voting widget should not be expanded after last show</source>
       <translation>Antal dage afstemnings widget ikke skal udvides efter sidste succesfulde visning</translation>
     </message>
@@ -254,11 +198,15 @@
       <translation type="unfinished"/>
     </message>
     <message>
-      <source>Disable option in widget to open new window. Restore icon will be hidden</source>
+      <source>Hide &apos;New Window&apos; option in Connector Widget</source>
       <translation type="unfinished"/>
     </message>
     <message>
       <source>Disable JS execution in Co-Browsing operator window</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Disable iframes in sharing mode</source>
       <translation type="unfinished"/>
     </message>
     <message>
@@ -390,6 +338,29 @@
     <message>
       <source>Updated!</source>
       <translation>Opdateret!</translation>
+    </message>
+  </context>
+  <context>
+    <name>survey/form</name>
+    <message>
+      <source>Add option</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Enter a possible answer to your question here...</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Enable stars</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Enable question</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Enable question with an answers</source>
+      <translation type="unfinished"/>
     </message>
   </context>
   <context>
@@ -706,8 +677,8 @@
       <translation>Brug for hjælp?</translation>
     </message>
     <message>
-      <source>Our staff is always ready to help</source>
-      <translation>Vores personale er altid klar til at hjælpe</translation>
+      <source>Our staff are always ready to help</source>
+      <translation type="unfinished"/>
     </message>
     <message>
       <source>Live help is offline...</source>
@@ -819,6 +790,10 @@
     <message>
       <source>Identifier, for what identifier this message should be shown, leave empty for all</source>
       <translation>Id, for hvilke id denne meddelelse skal vises, efterlad tom for alle</translation>
+    </message>
+    <message>
+      <source>Tag</source>
+      <translation type="unfinished"/>
     </message>
     <message>
       <source>Matched times</source>
@@ -1152,6 +1127,14 @@
     </message>
     <message>
       <source>Invisible, only JS API will be included</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Full height right</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Full height left</source>
       <translation type="unfinished"/>
     </message>
     <message>
@@ -1539,10 +1522,6 @@
   <context>
     <name>department/edit</name>
     <message>
-      <source>Priority</source>
-      <translation>Prioritet</translation>
-    </message>
-    <message>
       <source>Any</source>
       <translation>Enhver</translation>
     </message>
@@ -1801,6 +1780,18 @@
       <translation type="unfinished"/>
     </message>
     <message>
+      <source>Print</source>
+      <translation>Udskriv</translation>
+    </message>
+    <message>
+      <source>Please enter a URL</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Redirect user to another url</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
       <source>Choose other than default recognition language</source>
       <translation type="unfinished"/>
     </message>
@@ -1871,18 +1862,6 @@
     <message>
       <source>Redirect user to contact form.</source>
       <translation>Omdirigere brugeren til en kontakt formular.</translation>
-    </message>
-    <message>
-      <source>Print</source>
-      <translation>Udskriv</translation>
-    </message>
-    <message>
-      <source>Please enter a URL</source>
-      <translation type="unfinished"/>
-    </message>
-    <message>
-      <source>Redirect user to another url</source>
-      <translation type="unfinished"/>
     </message>
     <message>
       <source>Department</source>
@@ -2008,6 +1987,18 @@
       <source>has accepted the chat!</source>
       <translation type="unfinished"/>
     </message>
+    <message>
+      <source>Auto responder got error</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Form data not valid</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Has no access to this chat</source>
+      <translation type="unfinished"/>
+    </message>
   </context>
   <context>
     <name>chat/translation</name>
@@ -2108,27 +2099,15 @@
       <translation type="unfinished"/>
     </message>
     <message>
-      <source>Could not detect language</source>
-      <translation type="unfinished"/>
-    </message>
-    <message>
       <source>Could not translate</source>
       <translation type="unfinished"/>
     </message>
     <message>
+      <source>Could not detect language</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
       <source>Translation configuration</source>
-      <translation type="unfinished"/>
-    </message>
-    <message>
-      <source>Chat messages automatic translations has been stopped</source>
-      <translation type="unfinished"/>
-    </message>
-    <message>
-      <source>Messages has been translated</source>
-      <translation type="unfinished"/>
-    </message>
-    <message>
-      <source>Please choose translation languages manually and click Auto translate</source>
       <translation type="unfinished"/>
     </message>
   </context>
@@ -2301,8 +2280,8 @@
       <translation>Screenshot</translation>
     </message>
     <message>
-      <source>Screenshot ready...</source>
-      <translation>Skærmbillede klar ...</translation>
+      <source>Screenshot store error</source>
+      <translation type="unfinished"/>
     </message>
   </context>
   <context>
@@ -2582,10 +2561,6 @@
       <translation type="unfinished"/>
     </message>
     <message>
-      <source>Please choose a star</source>
-      <translation type="unfinished"/>
-    </message>
-    <message>
       <source>Please enter a message, max characters</source>
       <translation>Angiv venligst en besked, max tegn</translation>
     </message>
@@ -2656,20 +2631,20 @@
       <translation>Aktiver/Deaktiver lyden om nye meddelelser fra operatøren</translation>
     </message>
     <message>
-      <source>Enable/Disable sound about new messages from users</source>
-      <translation>Aktiver/Deaktiver lyden om nye meddelelser fra brugere</translation>
-    </message>
-    <message>
-      <source>Enable/Disable sound about new pending chats</source>
-      <translation>Aktiver/Deaktiver lyden om nye ventende chats</translation>
-    </message>
-    <message>
       <source>Change my visibility to visible/invisible</source>
       <translation>Ændre min synlighed til synlig / usynlig</translation>
     </message>
     <message>
       <source>Change my status to online/offline</source>
       <translation>Ændre min status til online/offline</translation>
+    </message>
+    <message>
+      <source>Enable/Disable sound about new messages from users</source>
+      <translation>Aktiver/Deaktiver lyden om nye meddelelser fra brugere</translation>
+    </message>
+    <message>
+      <source>Enable/Disable sound about new pending chats</source>
+      <translation>Aktiver/Deaktiver lyden om nye ventende chats</translation>
     </message>
   </context>
   <context>
@@ -3115,6 +3090,10 @@
       <translation>Træk et mærke, hvor du vil have kort centreret som standard. Zoom gemmes også.</translation>
     </message>
     <message>
+      <source>Google Maps API key, saved automatically. After pasting the key, refresh the page.</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
       <source>Settings updated</source>
       <translation>Indstillinger opdateret</translation>
     </message>
@@ -3538,10 +3517,6 @@
       <translation>E-mail-skabeloner</translation>
     </message>
     <message>
-      <source>Languages configuration</source>
-      <translation>Sprogkonfiguration</translation>
-    </message>
-    <message>
       <source>GEO detection configuration</source>
       <translation>GEO-detektions konfiguration</translation>
     </message>
@@ -3606,6 +3581,10 @@
       <translation type="unfinished"/>
     </message>
     <message>
+      <source>Languages configuration</source>
+      <translation>Sprogkonfiguration</translation>
+    </message>
+    <message>
       <source>Maintenance</source>
       <translation type="unfinished"/>
     </message>
@@ -3663,6 +3642,18 @@
     </message>
     <message>
       <source>Default theme</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Back office theming</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Admin themes</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Default admin theme</source>
       <translation type="unfinished"/>
     </message>
     <message>
@@ -4437,6 +4428,14 @@
       <translation type="unfinished"/>
     </message>
     <message>
+      <source>Please enter resource identifier</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Add resource</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
       <source>Minimum 40 characters for encryption key!</source>
       <translation type="unfinished"/>
     </message>
@@ -4984,10 +4983,6 @@
   <context>
     <name>chat/transferchat</name>
     <message>
-      <source>Departments</source>
-      <translation>Afdelinger</translation>
-    </message>
-    <message>
       <source>Transfer to a user</source>
       <translation>Overfør til en bruger</translation>
     </message>
@@ -5381,6 +5376,10 @@
   <context>
     <name>cobrowse/browse</name>
     <message>
+      <source>Click blue eye at the top to request screen share</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
       <source>Request screen share</source>
       <translation type="unfinished"/>
     </message>
@@ -5398,10 +5397,6 @@
     </message>
     <message>
       <source>On click navigate user browser</source>
-      <translation type="unfinished"/>
-    </message>
-    <message>
-      <source>Click blue eye at the top to request screen share</source>
       <translation type="unfinished"/>
     </message>
     <message>
@@ -5446,26 +5441,6 @@
   </context>
   <context>
     <name>user/account</name>
-    <message>
-      <source>Please enter a username!</source>
-      <translation>Angiv et brugernavn!</translation>
-    </message>
-    <message>
-      <source>User exists!</source>
-      <translation>Brugeren findes!</translation>
-    </message>
-    <message>
-      <source>Wrong email address</source>
-      <translation>Forkert e-mail-adresse</translation>
-    </message>
-    <message>
-      <source>Please enter a name</source>
-      <translation>Angiv et navn</translation>
-    </message>
-    <message>
-      <source>Passwords mismatch</source>
-      <translation>Adgangskoder stemmer ikke oversens</translation>
-    </message>
     <message>
       <source>Updated</source>
       <translation>Opdateret</translation>
@@ -6053,6 +6028,44 @@
     </message>
   </context>
   <context>
+    <name>paidchat/expiredchat</name>
+    <message>
+      <source>Chat</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Chat was closed.</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Invalid hash</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Removed paid chat</source>
+      <translation type="unfinished"/>
+    </message>
+  </context>
+  <context>
+    <name>paidchat/settings</name>
+    <message>
+      <source>Paid chat settings</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Enabled</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>User can not access old chat if chat is closed</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Secret hash, used for verification</source>
+      <translation type="unfinished"/>
+    </message>
+  </context>
+  <context>
     <name>permission/editrole</name>
     <message>
       <source>Edit role</source>
@@ -6305,6 +6318,60 @@
     <message>
       <source>System configuration</source>
       <translation>Systemkonfiguration</translation>
+    </message>
+  </context>
+  <context>
+    <name>lhproduct/index</name>
+    <message>
+      <source>Products</source>
+      <translation type="unfinished"/>
+    </message>
+  </context>
+  <context>
+    <name>theme/index</name>
+    <message>
+      <source>Products</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Default theme</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Theme</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Widget themes</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Import a new theme</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Admin</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Admin themes</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Default admin theme</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Rest API</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Themes</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Import theme</source>
+      <translation type="unfinished"/>
     </message>
   </context>
   <context>
@@ -6573,6 +6640,17 @@
     </message>
   </context>
   <context>
+    <name>lhrestapi/index</name>
+    <message>
+      <source>Rest API</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Rest API Keys</source>
+      <translation type="unfinished"/>
+    </message>
+  </context>
+  <context>
     <name>speech/language</name>
     <message>
       <source>Choose speech recognition language for this chat</source>
@@ -6621,38 +6699,42 @@
       <translation type="unfinished"/>
     </message>
     <message>
-      <source>Stars</source>
+      <source>Time</source>
       <translation type="unfinished"/>
     </message>
     <message>
-      <source>Time</source>
+      <source>View information</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Collected information</source>
       <translation type="unfinished"/>
     </message>
     <message>
       <source>Department name</source>
       <translation type="unfinished"/>
     </message>
+    <message>
+      <source>Stars</source>
+      <translation type="unfinished"/>
+    </message>
   </context>
   <context>
     <name>survey/fill</name>
-    <message>
-      <source>star</source>
-      <translation type="unfinished"/>
-    </message>
-    <message>
-      <source>stars</source>
-      <translation type="unfinished"/>
-    </message>
     <message>
       <source>Preview chat</source>
       <translation type="unfinished"/>
     </message>
     <message>
-      <source>How well did we do?</source>
+      <source>star</source>
       <translation type="unfinished"/>
     </message>
     <message>
       <source>Poor</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>stars</source>
       <translation type="unfinished"/>
     </message>
     <message>
@@ -6855,14 +6937,6 @@
   <context>
     <name>user/edit</name>
     <message>
-      <source>Please enter a name</source>
-      <translation>Angiv et navn</translation>
-    </message>
-    <message>
-      <source>Passwords mismatch</source>
-      <translation>Adgangskoder stemmer ikke overens</translation>
-    </message>
-    <message>
       <source>Server default time zone</source>
       <translation>Server standardtidszone</translation>
     </message>
@@ -6994,37 +7068,91 @@
     </message>
   </context>
   <context>
-    <name>theme/index</name>
+    <name>icclicktocallform/form</name>
     <message>
-      <source>Products</source>
+      <source>Settings</source>
       <translation type="unfinished"/>
     </message>
     <message>
-      <source>Default theme</source>
+      <source>Header settings</source>
       <translation type="unfinished"/>
     </message>
     <message>
-      <source>Theme</source>
+      <source>Header css</source>
       <translation type="unfinished"/>
     </message>
     <message>
-      <source>Widget themes</source>
+      <source>Static content</source>
       <translation type="unfinished"/>
     </message>
     <message>
-      <source>Import a new theme</source>
+      <source>JS</source>
       <translation type="unfinished"/>
     </message>
     <message>
-      <source>Rest API</source>
+      <source>CSS</source>
       <translation type="unfinished"/>
     </message>
     <message>
-      <source>Themes</source>
+      <source>Name</source>
       <translation type="unfinished"/>
     </message>
     <message>
-      <source>Import theme</source>
+      <source>Header content</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Resource name for replacement</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Empty...</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Invalid CSRF token!</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Please enter a name</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>File not chosen for</source>
+      <translation type="unfinished"/>
+    </message>
+  </context>
+  <context>
+    <name>lhtheme/admin</name>
+    <message>
+      <source>New admin theme</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Admin themes</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Name</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Default admin theme</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Edit admin theme</source>
+      <translation type="unfinished"/>
+    </message>
+  </context>
+  <context>
+    <name>admintheme/form</name>
+    <message>
+      <source>Edit theme</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Updated</source>
       <translation type="unfinished"/>
     </message>
   </context>
@@ -7039,6 +7167,10 @@
     <name>theme/import</name>
     <message>
       <source>Default theme was set</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Default admin theme was set</source>
       <translation type="unfinished"/>
     </message>
     <message>
@@ -7068,30 +7200,6 @@
   </context>
   <context>
     <name>user/new</name>
-    <message>
-      <source>Please choose a default user group</source>
-      <translation>Vælg en standardgruppe for brugeren</translation>
-    </message>
-    <message>
-      <source>Wrong email address</source>
-      <translation>Forkert emailadresse</translation>
-    </message>
-    <message>
-      <source>Please enter a name</source>
-      <translation>Angiv et navn</translation>
-    </message>
-    <message>
-      <source>Please enter a username</source>
-      <translation>Angiv et brugernavn</translation>
-    </message>
-    <message>
-      <source>User exists</source>
-      <translation>Bruger findes allerede</translation>
-    </message>
-    <message>
-      <source>Passwords mismatch</source>
-      <translation>Adgangskoder stemmer ikke overens</translation>
-    </message>
     <message>
       <source>Invisible mode</source>
       <translation>Usynlig tilstand</translation>
@@ -7370,8 +7478,16 @@
       <translation type="unfinished"/>
     </message>
     <message>
+      <source>CSFR token is invalid, try to resubmit form</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
       <source>Incorrect username or password</source>
       <translation>Forkert brugernavn eller adgangskode</translation>
+    </message>
+    <message>
+      <source>Logged in successfully</source>
+      <translation type="unfinished"/>
     </message>
   </context>
   <context>
@@ -7457,6 +7573,60 @@
     <message>
       <source>Message seen</source>
       <translation>Meddelelse set</translation>
+    </message>
+  </context>
+  <context>
+    <name>abstract/product</name>
+    <message>
+      <source>Name</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Priority</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Product</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>API Key</source>
+      <translation type="unfinished"/>
+    </message>
+  </context>
+  <context>
+    <name>abstract/survey</name>
+    <message>
+      <source>Name</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Max stars for feedback</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Max stars pos</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Title for evaluation</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Enabled</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Title for plain question</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Title for custom questions</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Survey</source>
+      <translation type="unfinished"/>
     </message>
   </context>
   <context>
@@ -7585,6 +7755,37 @@
     <message>
       <source>Please enter a valid to date range!</source>
       <translation>Angiv et gyldigt til-datointerval!</translation>
+    </message>
+  </context>
+  <context>
+    <name>user/validator</name>
+    <message>
+      <source>Please enter a username</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>User exists</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Passwords mismatch</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>User action type not set</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Wrong email address</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Please enter a name</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Please choose a default user group</source>
+      <translation type="unfinished"/>
     </message>
   </context>
   <context>
@@ -7750,21 +7951,6 @@
     </message>
   </context>
   <context>
-    <name>abstract/survey</name>
-    <message>
-      <source>Name</source>
-      <translation type="unfinished"/>
-    </message>
-    <message>
-      <source>Max stars for feedback</source>
-      <translation type="unfinished"/>
-    </message>
-    <message>
-      <source>Survey</source>
-      <translation type="unfinished"/>
-    </message>
-  </context>
-  <context>
     <name>chat/accepttrasnfer</name>
     <message>
       <source>has joined the chat!</source>
@@ -7856,112 +8042,6 @@
     <message>
       <source>Please enter valid file type!</source>
       <translation>Indtast venligst gyldig filtype!</translation>
-    </message>
-  </context>
-  <context>
-    <name>lhproduct/index</name>
-    <message>
-      <source>Products</source>
-      <translation type="unfinished"/>
-    </message>
-  </context>
-  <context>
-    <name>abstract/product</name>
-    <message>
-      <source>Name</source>
-      <translation type="unfinished"/>
-    </message>
-    <message>
-      <source>Priority</source>
-      <translation type="unfinished"/>
-    </message>
-    <message>
-      <source>Product</source>
-      <translation type="unfinished"/>
-    </message>
-    <message>
-      <source>API Key</source>
-      <translation type="unfinished"/>
-    </message>
-  </context>
-  <context>
-    <name>user/validator</name>
-    <message>
-      <source>Please enter a username</source>
-      <translation type="unfinished"/>
-    </message>
-    <message>
-      <source>User exists</source>
-      <translation type="unfinished"/>
-    </message>
-    <message>
-      <source>Passwords mismatch</source>
-      <translation type="unfinished"/>
-    </message>
-    <message>
-      <source>User action type not set</source>
-      <translation type="unfinished"/>
-    </message>
-    <message>
-      <source>Wrong email address</source>
-      <translation type="unfinished"/>
-    </message>
-    <message>
-      <source>Please enter a name</source>
-      <translation type="unfinished"/>
-    </message>
-    <message>
-      <source>Please choose a default user group</source>
-      <translation type="unfinished"/>
-    </message>
-  </context>
-  <context>
-    <name>paidchat/expiredchat</name>
-    <message>
-      <source>Chat</source>
-      <translation type="unfinished"/>
-    </message>
-    <message>
-      <source>Chat was closed.</source>
-      <translation type="unfinished"/>
-    </message>
-    <message>
-      <source>Invalid hash</source>
-      <translation type="unfinished"/>
-    </message>
-    <message>
-      <source>Removed paid chat</source>
-      <translation type="unfinished"/>
-    </message>
-  </context>
-  <context>
-    <name>paidchat/settings</name>
-    <message>
-      <source>Paid chat settings</source>
-      <translation type="unfinished"/>
-    </message>
-    <message>
-      <source>Enabled</source>
-      <translation type="unfinished"/>
-    </message>
-    <message>
-      <source>User can not access old chat if chat is closed</source>
-      <translation type="unfinished"/>
-    </message>
-    <message>
-      <source>Secret hash, used for verification</source>
-      <translation type="unfinished"/>
-    </message>
-  </context>
-  <context>
-    <name>lhrestapi/index</name>
-    <message>
-      <source>Rest API</source>
-      <translation type="unfinished"/>
-    </message>
-    <message>
-      <source>Rest API Keys</source>
-      <translation type="unfinished"/>
     </message>
   </context>
 </TS>

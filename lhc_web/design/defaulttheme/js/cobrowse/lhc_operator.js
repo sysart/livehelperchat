@@ -129,7 +129,11 @@ var LHCCoBrowserOperator = (function() {
 				
 				if (tagName == 'SELECT') {
 					var node = document.createElement('SELECT');
-					
+
+					if (_this.formsenabled == false) {
+						node.setAttribute('disabled','disabled');
+					};
+
 					node.addEventListener('change', function(){
 						_this.changeSelectValue($(node)[0].selectedIndex, _this.getSelectorQuery(node));
 					}, false);
@@ -341,7 +345,7 @@ var LHCCoBrowserOperator = (function() {
 	{		
 		if (this.formsenabled == true) {
 			this.sendData('lhc_cobrowse_cmd:changeselect:'+val+'__SPLIT__'+selector.replace(new RegExp(':','g'),'_SEL_'));
-		}		
+		}
 	};
 	
 	LHCCoBrowserOperator.prototype.highlightElement = function(x,y,l,t,selector,node)
@@ -454,6 +458,7 @@ var LHCCoBrowserOperator = (function() {
 
 				this.socket.on('userjoined', function(chat_id) {
 					_this.userJoined(chat_id);
+
 				});
 
 			} catch (err) {
@@ -621,7 +626,12 @@ var LHCCoBrowserOperator = (function() {
 			// trigger treemirror's method; in our example only 'initialize' can be triggered,
 			// so it's reasonable to clearPage() and (re-)instantiate the mirror here
 		} else if (msg.f && msg.f == 'initialize') {			
-			this.clearPage();			
+			this.clearPage();
+
+			if(typeof msg.formsEnabled != "undefined") {
+				this.formsenabled = msg.formsEnabled;
+			}
+
 			this.mirror = new TreeMirror(this.iFrameDocument,
 					this.treeMirrorParams);
 			this.mirror.initialize.apply(this.mirror, msg.args);			
@@ -640,7 +650,7 @@ var LHCCoBrowserOperator = (function() {
 			
 			if (this.windowScroll == true) {
 				this.sendData('lhc_cobrowse_cmd:scroll:true');
-			};						
+			};
 			
 		} else if (msg.f && msg.f == 'cursor') {
 			this.visitorCursor(msg.pos);
@@ -671,6 +681,8 @@ var LHCCoBrowserOperator = (function() {
 			// called when remote socket is closed
 		} else if (msg.clear) {
 			this.clearPage();
+		} else if (msg.error_msg) {
+			alert(msg.error_msg);
 		} else {
 			//console.log('just message: ', msg);
 		}

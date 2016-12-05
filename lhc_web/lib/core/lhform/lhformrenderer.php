@@ -31,7 +31,9 @@ class erLhcoreClassFormRenderer {
     	} elseif (isset($_SERVER['HTTP_REFERER']) && !empty($_SERVER['HTTP_REFERER'])) {
     		$contentForm .= "<input type=\"hidden\" name=\"identifier\" value=\"".htmlspecialchars($_SERVER['HTTP_REFERER'])."\" />";
     	}
-    	
+
+        erLhcoreClassChatEventDispatcher::getInstance()->dispatch('form.on_form_render',array('form' => & $form, 'errors' => & self::$errors));
+
     	if ( empty(self::$errors) && ezcInputForm::hasPostData()) {
     		self::$isCollected = true;
     	}
@@ -328,7 +330,7 @@ class erLhcoreClassFormRenderer {
     		}
     	}
     	
-    	$options = [];
+    	$options = array();
     	if (isset($params['from']) && isset($params['till'])){
     		for ($i = $params['from']; $i <= $params['till']; $i++) {
     			$isSelected= $value == $i ? 'selected="selected"' : '';
@@ -373,7 +375,7 @@ class erLhcoreClassFormRenderer {
     		}
     	}
     	
-		$options = [];
+		$options = array();
 		$yearTill = (isset($params['till']) ? $params['till'] : date('Y'));
     	for ( $i = $yearTill; $i >= $params['from']; $i--) {    		    	
     		$isSelected= $value == $i ? 'selected="selected"' : '';
@@ -411,7 +413,7 @@ class erLhcoreClassFormRenderer {
     		}
     	}
     	
-		$options = [];
+		$options = array();
 			
     	for ( $i = 1; $i <= 12; $i++) {    		    	
     		$isSelected= $value == $i ? 'selected="selected"' : '';
@@ -487,7 +489,7 @@ class erLhcoreClassFormRenderer {
     }
     
     public static function renderAdditionalAtrributes($params) {
-    	$additionalAttributes = [];    	    	
+    	$additionalAttributes = array();
     	foreach ($params as $type => $value) {
     		if (strpos($type, 'ng-') !== false) {
     			$additionalAttributes[] = $type.'="'.htmlspecialchars($value).'"';

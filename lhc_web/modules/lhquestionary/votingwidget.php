@@ -121,6 +121,7 @@ if ($votingRelative !== false) {
 			}
 		}
 
+        erLhcoreClassChatEventDispatcher::getInstance()->dispatch('questionaire.before_option_chosen', array('voting' => & $votingAnswer, 'errors' => & $Errors));
 
 		if ( count($Errors) == 0) {
 			$votingAnswer->saveThis();
@@ -172,6 +173,8 @@ if ($votingRelative !== false) {
 				$Errors[] = erTranslationClassLhTranslation::getInstance()->getTranslation('questionary/votingwidget','You have already send your feedback!');
 			}
 		}
+
+        erLhcoreClassChatEventDispatcher::getInstance()->dispatch('questionaire.before_feedback_left', array('feedback' => & $answer, 'errors' => & $Errors));
 
 		if ( count($Errors) == 0) {
 			$answer->saveThis();

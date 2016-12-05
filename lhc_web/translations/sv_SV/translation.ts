@@ -2,62 +2,6 @@
   <context>
     <name>listchatconfig</name>
     <message>
-      <source/>
-      <translation type="unfinished"/>
-    </message>
-    <message>
-      <source/>
-      <translation type="unfinished"/>
-    </message>
-    <message>
-      <source/>
-      <translation type="unfinished"/>
-    </message>
-    <message>
-      <source>List online operators.</source>
-      <translation>Lista onlineoperatörer.</translation>
-    </message>
-    <message>
-      <source/>
-      <translation type="unfinished"/>
-    </message>
-    <message>
-      <source/>
-      <translation type="unfinished"/>
-    </message>
-    <message>
-      <source/>
-      <translation type="unfinished"/>
-    </message>
-    <message>
-      <source/>
-      <translation type="unfinished"/>
-    </message>
-    <message>
-      <source/>
-      <translation type="unfinished"/>
-    </message>
-    <message>
-      <source/>
-      <translation type="unfinished"/>
-    </message>
-    <message>
-      <source>Product module is enabled</source>
-      <translation>Produktmodulen är aktiverad</translation>
-    </message>
-    <message>
-      <source/>
-      <translation type="unfinished"/>
-    </message>
-    <message>
-      <source/>
-      <translation type="unfinished"/>
-    </message>
-    <message>
-      <source/>
-      <translation type="unfinished"/>
-    </message>
-    <message>
       <source>How many days voting widget should not be expanded after last show</source>
       <translation>Hur många dagar som röstwidgeten inte ska expanderas efter senaste visningen</translation>
     </message>
@@ -254,12 +198,16 @@
       <translation>Inaktivera utskrift av chatt</translation>
     </message>
     <message>
-      <source>Disable option in widget to open new window. Restore icon will be hidden</source>
-      <translation>Inaktivera alternativ i widget för att öppna ett nytt fönster. Återställningsikonen kommer att vara dold</translation>
+      <source>Hide &apos;New Window&apos; option in Connector Widget</source>
+      <translation type="unfinished"/>
     </message>
     <message>
       <source>Disable JS execution in Co-Browsing operator window</source>
       <translation>Inaktivera JS-körning i operatörens fönster i skärmdelningsläge</translation>
+    </message>
+    <message>
+      <source>Disable iframes in sharing mode</source>
+      <translation type="unfinished"/>
     </message>
     <message>
       <source>Disable HMTL5 storage, check it if your site is switching between http and https</source>
@@ -390,6 +338,29 @@
     <message>
       <source>Updated!</source>
       <translation>Uppdaterad!</translation>
+    </message>
+  </context>
+  <context>
+    <name>survey/form</name>
+    <message>
+      <source>Add option</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Enter a possible answer to your question here...</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Enable stars</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Enable question</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Enable question with an answers</source>
+      <translation type="unfinished"/>
     </message>
   </context>
   <context>
@@ -706,8 +677,8 @@
       <translation>Behöver du hjälp?</translation>
     </message>
     <message>
-      <source>Our staff is always ready to help</source>
-      <translation>Våra operatörer är alltid redo att hjälpa till</translation>
+      <source>Our staff are always ready to help</source>
+      <translation type="unfinished"/>
     </message>
     <message>
       <source>Live help is offline...</source>
@@ -819,6 +790,10 @@
     <message>
       <source>Identifier, for what identifier this message should be shown, leave empty for all</source>
       <translation>Identifierare, för vilket identitet ska detta meddelande visas för, lämna blankt för alla</translation>
+    </message>
+    <message>
+      <source>Tag</source>
+      <translation type="unfinished"/>
     </message>
     <message>
       <source>Matched times</source>
@@ -1153,6 +1128,14 @@
     <message>
       <source>Invisible, only JS API will be included</source>
       <translation>Osynlig, endast JS API kommer att inkluderas</translation>
+    </message>
+    <message>
+      <source>Full height right</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Full height left</source>
+      <translation type="unfinished"/>
     </message>
     <message>
       <source>Popup window width</source>
@@ -1539,10 +1522,6 @@
   <context>
     <name>department/edit</name>
     <message>
-      <source>Priority</source>
-      <translation>Prioritet</translation>
-    </message>
-    <message>
       <source>Any</source>
       <translation>Något</translation>
     </message>
@@ -1801,6 +1780,18 @@
       <translation>Skärmdelning</translation>
     </message>
     <message>
+      <source>Print</source>
+      <translation>Skriv ut</translation>
+    </message>
+    <message>
+      <source>Please enter a URL</source>
+      <translation>Var vänlig skriv en URL</translation>
+    </message>
+    <message>
+      <source>Redirect user to another url</source>
+      <translation>Vidarebefordra användare till en annan URL</translation>
+    </message>
+    <message>
       <source>Choose other than default recognition language</source>
       <translation>Välj ett annat igenkänningsspråk än det som är standard</translation>
     </message>
@@ -1871,18 +1862,6 @@
     <message>
       <source>Redirect user to contact form.</source>
       <translation>Vidarebefordra användare till kontaktformulär</translation>
-    </message>
-    <message>
-      <source>Print</source>
-      <translation>Skriv ut</translation>
-    </message>
-    <message>
-      <source>Please enter a URL</source>
-      <translation>Var vänlig skriv en URL</translation>
-    </message>
-    <message>
-      <source>Redirect user to another url</source>
-      <translation>Vidarebefordra användare till en annan URL</translation>
     </message>
     <message>
       <source>Department</source>
@@ -2008,6 +1987,18 @@
       <source>has accepted the chat!</source>
       <translation>har accepterat chatten!</translation>
     </message>
+    <message>
+      <source>Auto responder got error</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Form data not valid</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Has no access to this chat</source>
+      <translation type="unfinished"/>
+    </message>
   </context>
   <context>
     <name>chat/translation</name>
@@ -2108,28 +2099,16 @@
       <translation>Kunde inte bestämma vilket språk</translation>
     </message>
     <message>
-      <source>Could not detect language</source>
-      <translation>Kunde inte identifiera språk</translation>
-    </message>
-    <message>
       <source>Could not translate</source>
       <translation>Kunde inte översätta</translation>
     </message>
     <message>
+      <source>Could not detect language</source>
+      <translation>Kunde inte identifiera språk</translation>
+    </message>
+    <message>
       <source>Translation configuration</source>
       <translation>Konfiguration för översättning</translation>
-    </message>
-    <message>
-      <source>Chat messages automatic translations has been stopped</source>
-      <translation>Automatisk översättning av chattmeddelandena har stoppats</translation>
-    </message>
-    <message>
-      <source>Messages has been translated</source>
-      <translation>Meddelandena har översatts</translation>
-    </message>
-    <message>
-      <source>Please choose translation languages manually and click Auto translate</source>
-      <translation>Var vänlig välj språk för översättning manuellt och klicka på automatisk översättning</translation>
     </message>
   </context>
   <context>
@@ -2301,8 +2280,8 @@
       <translation>Skärmdump</translation>
     </message>
     <message>
-      <source>Screenshot ready...</source>
-      <translation>Skärmdump redo...</translation>
+      <source>Screenshot store error</source>
+      <translation type="unfinished"/>
     </message>
   </context>
   <context>
@@ -2582,10 +2561,6 @@
       <translation>Din förfrågan behandlades inte som förväntat - men oroa dig inte, det var inte ditt fel. Var vänlig skicka din förfrågan igen. Om du upplever samma fel så är du välkommen att kontakta oss.</translation>
     </message>
     <message>
-      <source>Please choose a star</source>
-      <translation>Var vänlig välj en stjärna</translation>
-    </message>
-    <message>
       <source>Please enter a message, max characters</source>
       <translation>Var vänlig skriv ett meddelande, max tecken</translation>
     </message>
@@ -2656,20 +2631,20 @@
       <translation>Av-/aktivera ljud för nya meddelanden från operatören</translation>
     </message>
     <message>
-      <source>Enable/Disable sound about new messages from users</source>
-      <translation>Av-/aktivera ljud för nya meddelanden från användare</translation>
-    </message>
-    <message>
-      <source>Enable/Disable sound about new pending chats</source>
-      <translation>Av-/aktivera ljud för väntande chattar</translation>
-    </message>
-    <message>
       <source>Change my visibility to visible/invisible</source>
       <translation>Ändra min status till synlig/ej synlig</translation>
     </message>
     <message>
       <source>Change my status to online/offline</source>
       <translation>Ändra min status till tillgänglig/frånvarande</translation>
+    </message>
+    <message>
+      <source>Enable/Disable sound about new messages from users</source>
+      <translation>Av-/aktivera ljud för nya meddelanden från användare</translation>
+    </message>
+    <message>
+      <source>Enable/Disable sound about new pending chats</source>
+      <translation>Av-/aktivera ljud för väntande chattar</translation>
     </message>
   </context>
   <context>
@@ -3115,6 +3090,10 @@
       <translation>Dra markören dit du vill ha kartan centrerad som standard. Även zoom nivå sparas.</translation>
     </message>
     <message>
+      <source>Google Maps API key, saved automatically. After pasting the key, refresh the page.</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
       <source>Settings updated</source>
       <translation>Inställningar uppdaterade</translation>
     </message>
@@ -3538,10 +3517,6 @@
       <translation>E-postmallar</translation>
     </message>
     <message>
-      <source>Languages configuration</source>
-      <translation>Språkinställningar</translation>
-    </message>
-    <message>
       <source>GEO detection configuration</source>
       <translation>Geografisk lokaliseringsinställning</translation>
     </message>
@@ -3606,6 +3581,10 @@
       <translation>Geo justering</translation>
     </message>
     <message>
+      <source>Languages configuration</source>
+      <translation>Språkinställningar</translation>
+    </message>
+    <message>
       <source>Maintenance</source>
       <translation>Underhåll</translation>
     </message>
@@ -3664,6 +3643,18 @@
     <message>
       <source>Default theme</source>
       <translation>Standardstil</translation>
+    </message>
+    <message>
+      <source>Back office theming</source>
+      <translation>Teman för administratörspanelen</translation>
+    </message>
+    <message>
+      <source>Admin themes</source>
+      <translation>Administratörsteman</translation>
+    </message>
+    <message>
+      <source>Default admin theme</source>
+      <translation>Standard administratörstema</translation>
     </message>
     <message>
       <source>Automatic translations</source>
@@ -4437,6 +4428,14 @@
       <translation>Ytterligare krypteringsnyckel, minimum längd 40 tecken</translation>
     </message>
     <message>
+      <source>Please enter resource identifier</source>
+      <translation>Var vänlig skriv in resursidentifieraren</translation>
+    </message>
+    <message>
+      <source>Add resource</source>
+      <translation>Lägg till resurs</translation>
+    </message>
+    <message>
       <source>Minimum 40 characters for encryption key!</source>
       <translation>40 tecken minimum för krypteringsnyckeln!</translation>
     </message>
@@ -4984,10 +4983,6 @@
   <context>
     <name>chat/transferchat</name>
     <message>
-      <source>Departments</source>
-      <translation>Avdelningar</translation>
-    </message>
-    <message>
       <source>Transfer to a user</source>
       <translation>Vidarebefodra till en användare</translation>
     </message>
@@ -5381,6 +5376,10 @@
   <context>
     <name>cobrowse/browse</name>
     <message>
+      <source>Click blue eye at the top to request screen share</source>
+      <translation>Klicka på ikonen med det blåa ögat högst upp för att begära skärmdelning</translation>
+    </message>
+    <message>
       <source>Request screen share</source>
       <translation>Begär skärmdelning</translation>
     </message>
@@ -5399,10 +5398,6 @@
     <message>
       <source>On click navigate user browser</source>
       <translation>Klicka för att navigera användarens webbläsare</translation>
-    </message>
-    <message>
-      <source>Click blue eye at the top to request screen share</source>
-      <translation>Klicka på ikonen med det blåa ögat högst upp för att begära skärmdelning</translation>
     </message>
     <message>
       <source>Screen sharing session has finished</source>
@@ -5446,26 +5441,6 @@
   </context>
   <context>
     <name>user/account</name>
-    <message>
-      <source>Please enter a username!</source>
-      <translation>Vänligen skriv in ett användarnamn!</translation>
-    </message>
-    <message>
-      <source>User exists!</source>
-      <translation>Användaren finns redan!</translation>
-    </message>
-    <message>
-      <source>Wrong email address</source>
-      <translation>Felaktig e-postadress</translation>
-    </message>
-    <message>
-      <source>Please enter a name</source>
-      <translation>Vänligen skriv in ett namn</translation>
-    </message>
-    <message>
-      <source>Passwords mismatch</source>
-      <translation>Lösenorden matchar inte</translation>
-    </message>
     <message>
       <source>Updated</source>
       <translation>Uppdaterad</translation>
@@ -6053,6 +6028,44 @@
     </message>
   </context>
   <context>
+    <name>paidchat/expiredchat</name>
+    <message>
+      <source>Chat</source>
+      <translation>Chatt</translation>
+    </message>
+    <message>
+      <source>Chat was closed.</source>
+      <translation>Chatten stängdes.</translation>
+    </message>
+    <message>
+      <source>Invalid hash</source>
+      <translation>Ogiltig hash</translation>
+    </message>
+    <message>
+      <source>Removed paid chat</source>
+      <translation>Tog bort betalad chatt</translation>
+    </message>
+  </context>
+  <context>
+    <name>paidchat/settings</name>
+    <message>
+      <source>Paid chat settings</source>
+      <translation>Inställningar för betalad chatt</translation>
+    </message>
+    <message>
+      <source>Enabled</source>
+      <translation>Aktiverad</translation>
+    </message>
+    <message>
+      <source>User can not access old chat if chat is closed</source>
+      <translation>Användaren kan inte komma åt gamla chatten om chatten stängs ner</translation>
+    </message>
+    <message>
+      <source>Secret hash, used for verification</source>
+      <translation>Hemlig hash, används för verifikation</translation>
+    </message>
+  </context>
+  <context>
     <name>permission/editrole</name>
     <message>
       <source>Edit role</source>
@@ -6305,6 +6318,60 @@
     <message>
       <source>System configuration</source>
       <translation>Systeminställningar</translation>
+    </message>
+  </context>
+  <context>
+    <name>lhproduct/index</name>
+    <message>
+      <source>Products</source>
+      <translation>Produkter</translation>
+    </message>
+  </context>
+  <context>
+    <name>theme/index</name>
+    <message>
+      <source>Products</source>
+      <translation>Produkter</translation>
+    </message>
+    <message>
+      <source>Default theme</source>
+      <translation>Standardstil</translation>
+    </message>
+    <message>
+      <source>Theme</source>
+      <translation>Stil</translation>
+    </message>
+    <message>
+      <source>Widget themes</source>
+      <translation>Widgetstilar</translation>
+    </message>
+    <message>
+      <source>Import a new theme</source>
+      <translation>Importera en ny stil</translation>
+    </message>
+    <message>
+      <source>Admin</source>
+      <translation>Administratör</translation>
+    </message>
+    <message>
+      <source>Admin themes</source>
+      <translation>Administratörsteman</translation>
+    </message>
+    <message>
+      <source>Default admin theme</source>
+      <translation>Standard administratörstema</translation>
+    </message>
+    <message>
+      <source>Rest API</source>
+      <translation>Rest API</translation>
+    </message>
+    <message>
+      <source>Themes</source>
+      <translation>Stilar</translation>
+    </message>
+    <message>
+      <source>Import theme</source>
+      <translation>Importera stil</translation>
     </message>
   </context>
   <context>
@@ -6573,6 +6640,17 @@
     </message>
   </context>
   <context>
+    <name>lhrestapi/index</name>
+    <message>
+      <source>Rest API</source>
+      <translation>Rest API</translation>
+    </message>
+    <message>
+      <source>Rest API Keys</source>
+      <translation>Rest API-nycklar</translation>
+    </message>
+  </context>
+  <context>
     <name>speech/language</name>
     <message>
       <source>Choose speech recognition language for this chat</source>
@@ -6621,39 +6699,43 @@
       <translation>Operatör</translation>
     </message>
     <message>
-      <source>Stars</source>
-      <translation>Stjärnor</translation>
-    </message>
-    <message>
       <source>Time</source>
       <translation>Tid</translation>
+    </message>
+    <message>
+      <source>View information</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Collected information</source>
+      <translation type="unfinished"/>
     </message>
     <message>
       <source>Department name</source>
       <translation>Namn på avdelningen</translation>
     </message>
+    <message>
+      <source>Stars</source>
+      <translation>Stjärnor</translation>
+    </message>
   </context>
   <context>
     <name>survey/fill</name>
-    <message>
-      <source>star</source>
-      <translation>stjärna</translation>
-    </message>
-    <message>
-      <source>stars</source>
-      <translation>stjärnor</translation>
-    </message>
     <message>
       <source>Preview chat</source>
       <translation>Förhandsvisa chatt</translation>
     </message>
     <message>
-      <source>How well did we do?</source>
-      <translation>Hur bra gjorde vi ifrån oss?</translation>
+      <source>star</source>
+      <translation>stjärna</translation>
     </message>
     <message>
       <source>Poor</source>
       <translation>Dåligt</translation>
+    </message>
+    <message>
+      <source>stars</source>
+      <translation>stjärnor</translation>
     </message>
     <message>
       <source>Excellent</source>
@@ -6855,14 +6937,6 @@
   <context>
     <name>user/edit</name>
     <message>
-      <source>Please enter a name</source>
-      <translation>Vänligen skriv in ett namn</translation>
-    </message>
-    <message>
-      <source>Passwords mismatch</source>
-      <translation>Lösenorden matchar inte</translation>
-    </message>
-    <message>
       <source>Server default time zone</source>
       <translation>Serverns standard tidszon</translation>
     </message>
@@ -6994,38 +7068,92 @@
     </message>
   </context>
   <context>
-    <name>theme/index</name>
+    <name>icclicktocallform/form</name>
     <message>
-      <source>Products</source>
-      <translation>Produkter</translation>
+      <source>Settings</source>
+      <translation>Inställningar</translation>
     </message>
     <message>
-      <source>Default theme</source>
-      <translation>Standardstil</translation>
+      <source>Header settings</source>
+      <translation>Inställningar för headern</translation>
     </message>
     <message>
-      <source>Theme</source>
-      <translation>Stil</translation>
+      <source>Header css</source>
+      <translation>CSS för headern</translation>
     </message>
     <message>
-      <source>Widget themes</source>
-      <translation>Widgetstilar</translation>
+      <source>Static content</source>
+      <translation>Statiskt innehåll</translation>
     </message>
     <message>
-      <source>Import a new theme</source>
-      <translation>Importera en ny stil</translation>
+      <source>JS</source>
+      <translation>JS/JavaScript</translation>
     </message>
     <message>
-      <source>Rest API</source>
-      <translation>Rest API</translation>
+      <source>CSS</source>
+      <translation>CSS</translation>
     </message>
     <message>
-      <source>Themes</source>
-      <translation>Stilar</translation>
+      <source>Name</source>
+      <translation>Namn</translation>
     </message>
     <message>
-      <source>Import theme</source>
-      <translation>Importera stil</translation>
+      <source>Header content</source>
+      <translation>Innehåll i headern</translation>
+    </message>
+    <message>
+      <source>Resource name for replacement</source>
+      <translation>Resursnamn för ersättning</translation>
+    </message>
+    <message>
+      <source>Empty...</source>
+      <translation>Tom...</translation>
+    </message>
+    <message>
+      <source>Invalid CSRF token!</source>
+      <translation>Ogiltigt CSRF-tecken!</translation>
+    </message>
+    <message>
+      <source>Please enter a name</source>
+      <translation>Var vänlig skriv in ett namn</translation>
+    </message>
+    <message>
+      <source>File not chosen for</source>
+      <translation>Ingen fil vald för</translation>
+    </message>
+  </context>
+  <context>
+    <name>lhtheme/admin</name>
+    <message>
+      <source>New admin theme</source>
+      <translation>Nytt administratörstema</translation>
+    </message>
+    <message>
+      <source>Admin themes</source>
+      <translation>Administratörsteman</translation>
+    </message>
+    <message>
+      <source>Name</source>
+      <translation>Namn</translation>
+    </message>
+    <message>
+      <source>Default admin theme</source>
+      <translation>Standard administratörstema</translation>
+    </message>
+    <message>
+      <source>Edit admin theme</source>
+      <translation>Redigera administratörstema</translation>
+    </message>
+  </context>
+  <context>
+    <name>admintheme/form</name>
+    <message>
+      <source>Edit theme</source>
+      <translation>Redigera temat</translation>
+    </message>
+    <message>
+      <source>Updated</source>
+      <translation>Uppdaterad</translation>
     </message>
   </context>
   <context>
@@ -7040,6 +7168,10 @@
     <message>
       <source>Default theme was set</source>
       <translation>Standardstilen var vald</translation>
+    </message>
+    <message>
+      <source>Default admin theme was set</source>
+      <translation>Standard administratörstema valdes</translation>
     </message>
     <message>
       <source>Import theme</source>
@@ -7068,30 +7200,6 @@
   </context>
   <context>
     <name>user/new</name>
-    <message>
-      <source>Please choose a default user group</source>
-      <translation>Vänligen välj en standard användargrupp</translation>
-    </message>
-    <message>
-      <source>Wrong email address</source>
-      <translation>Felaktig e-postadress</translation>
-    </message>
-    <message>
-      <source>Please enter a name</source>
-      <translation>Vänligen skriv in ett namn</translation>
-    </message>
-    <message>
-      <source>Please enter a username</source>
-      <translation>Vänligen skriv in ett användarnamn</translation>
-    </message>
-    <message>
-      <source>User exists</source>
-      <translation>Användaren finns redan</translation>
-    </message>
-    <message>
-      <source>Passwords mismatch</source>
-      <translation>Lösenorden matchar inte</translation>
-    </message>
     <message>
       <source>Invisible mode</source>
       <translation>Ej synligt läge</translation>
@@ -7370,8 +7478,16 @@
       <translation>Du loggades ut eftersom en annan användare loggade in under samma konto</translation>
     </message>
     <message>
+      <source>CSFR token is invalid, try to resubmit form</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
       <source>Incorrect username or password</source>
       <translation>Felaktigt användarnamn eller lösenord</translation>
+    </message>
+    <message>
+      <source>Logged in successfully</source>
+      <translation type="unfinished"/>
     </message>
   </context>
   <context>
@@ -7457,6 +7573,60 @@
     <message>
       <source>Message seen</source>
       <translation>Meddelande sett</translation>
+    </message>
+  </context>
+  <context>
+    <name>abstract/product</name>
+    <message>
+      <source>Name</source>
+      <translation>Namn</translation>
+    </message>
+    <message>
+      <source>Priority</source>
+      <translation>Prioritet</translation>
+    </message>
+    <message>
+      <source>Product</source>
+      <translation>Produkt</translation>
+    </message>
+    <message>
+      <source>API Key</source>
+      <translation>API-nyckel</translation>
+    </message>
+  </context>
+  <context>
+    <name>abstract/survey</name>
+    <message>
+      <source>Name</source>
+      <translation>Namn</translation>
+    </message>
+    <message>
+      <source>Max stars for feedback</source>
+      <translation>Max antal stjärnor för feedback</translation>
+    </message>
+    <message>
+      <source>Max stars pos</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Title for evaluation</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Enabled</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Title for plain question</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Title for custom questions</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Survey</source>
+      <translation>Undersökning</translation>
     </message>
   </context>
   <context>
@@ -7585,6 +7755,37 @@
     <message>
       <source>Please enter a valid to date range!</source>
       <translation>Vänligen ange ett giltigt till datum!</translation>
+    </message>
+  </context>
+  <context>
+    <name>user/validator</name>
+    <message>
+      <source>Please enter a username</source>
+      <translation>Var vänlig skriv in ett användarnamn</translation>
+    </message>
+    <message>
+      <source>User exists</source>
+      <translation>Användaren finns redan</translation>
+    </message>
+    <message>
+      <source>Passwords mismatch</source>
+      <translation>Lösenorden matchar inte</translation>
+    </message>
+    <message>
+      <source>User action type not set</source>
+      <translation>Användare åtgärdstyp inte inställd</translation>
+    </message>
+    <message>
+      <source>Wrong email address</source>
+      <translation>Fel e-postadress</translation>
+    </message>
+    <message>
+      <source>Please enter a name</source>
+      <translation>Var vänlig skriv in ett namn</translation>
+    </message>
+    <message>
+      <source>Please choose a default user group</source>
+      <translation>Var vänlig välj en användargrupp som standard</translation>
     </message>
   </context>
   <context>
@@ -7750,21 +7951,6 @@
     </message>
   </context>
   <context>
-    <name>abstract/survey</name>
-    <message>
-      <source>Name</source>
-      <translation>Namn</translation>
-    </message>
-    <message>
-      <source>Max stars for feedback</source>
-      <translation>Max antal stjärnor för feedback</translation>
-    </message>
-    <message>
-      <source>Survey</source>
-      <translation>Undersökning</translation>
-    </message>
-  </context>
-  <context>
     <name>chat/accepttrasnfer</name>
     <message>
       <source>has joined the chat!</source>
@@ -7856,112 +8042,6 @@
     <message>
       <source>Please enter valid file type!</source>
       <translation>Vänligen ange en giltig filtyp!</translation>
-    </message>
-  </context>
-  <context>
-    <name>lhproduct/index</name>
-    <message>
-      <source>Products</source>
-      <translation>Produkter</translation>
-    </message>
-  </context>
-  <context>
-    <name>abstract/product</name>
-    <message>
-      <source>Name</source>
-      <translation>Namn</translation>
-    </message>
-    <message>
-      <source>Priority</source>
-      <translation>Prioritet</translation>
-    </message>
-    <message>
-      <source>Product</source>
-      <translation>Produkt</translation>
-    </message>
-    <message>
-      <source>API Key</source>
-      <translation>API-nyckel</translation>
-    </message>
-  </context>
-  <context>
-    <name>user/validator</name>
-    <message>
-      <source>Please enter a username</source>
-      <translation>Var vänlig skriv in ett användarnamn</translation>
-    </message>
-    <message>
-      <source>User exists</source>
-      <translation>Användaren finns redan</translation>
-    </message>
-    <message>
-      <source>Passwords mismatch</source>
-      <translation>Lösenorden matchar inte</translation>
-    </message>
-    <message>
-      <source>User action type not set</source>
-      <translation>Användare åtgärdstyp inte inställd</translation>
-    </message>
-    <message>
-      <source>Wrong email address</source>
-      <translation>Fel e-postadress</translation>
-    </message>
-    <message>
-      <source>Please enter a name</source>
-      <translation>Var vänlig skriv in ett namn</translation>
-    </message>
-    <message>
-      <source>Please choose a default user group</source>
-      <translation>Var vänlig välj en användargrupp som standard</translation>
-    </message>
-  </context>
-  <context>
-    <name>paidchat/expiredchat</name>
-    <message>
-      <source>Chat</source>
-      <translation>Chatt</translation>
-    </message>
-    <message>
-      <source>Chat was closed.</source>
-      <translation>Chatten stängdes.</translation>
-    </message>
-    <message>
-      <source>Invalid hash</source>
-      <translation>Ogiltig hash</translation>
-    </message>
-    <message>
-      <source>Removed paid chat</source>
-      <translation>Tog bort betalad chatt</translation>
-    </message>
-  </context>
-  <context>
-    <name>paidchat/settings</name>
-    <message>
-      <source>Paid chat settings</source>
-      <translation>Inställningar för betalad chatt</translation>
-    </message>
-    <message>
-      <source>Enabled</source>
-      <translation>Aktiverad</translation>
-    </message>
-    <message>
-      <source>User can not access old chat if chat is closed</source>
-      <translation>Användaren kan inte komma åt gamla chatten om chatten stängs ner</translation>
-    </message>
-    <message>
-      <source>Secret hash, used for verification</source>
-      <translation>Hemlig hash, används för verifikation</translation>
-    </message>
-  </context>
-  <context>
-    <name>lhrestapi/index</name>
-    <message>
-      <source>Rest API</source>
-      <translation>Rest API</translation>
-    </message>
-    <message>
-      <source>Rest API Keys</source>
-      <translation>Rest API-nycklar</translation>
     </message>
   </context>
 </TS>

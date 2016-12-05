@@ -33,12 +33,28 @@ $ViewList['isonlineuser'] = array(
     'params' => array('user_id')
 );
 
+$ViewList['setoperatorstatus'] = array(
+    'params' => array()
+);
+
+$ViewList['setinvisibilitystatus'] = array(
+    'params' => array()
+);
+
 $ViewList['isonline'] = array(
     'params' => array()
 );
 
 $ViewList['isonlinedepartment'] = array(
     'params' => array('department_id')
+);
+
+$ViewList['getusers'] = array(
+    'params' => array()
+);
+
+$ViewList['getuser'] = array(
+    'params' => array()
 );
 
 $FunctionList = array();

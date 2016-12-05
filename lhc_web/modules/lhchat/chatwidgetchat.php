@@ -95,6 +95,7 @@ try {
         	$db->commit();
         };
 
+        erLhcoreClassChatEventDispatcher::getInstance()->dispatch('chat.chatwidgetchat',array('result' => & $Result , 'tpl' => & $tpl, 'params' => & $Params, 'chat' => & $chat));
     } else {
         $tpl->setFile( 'lhchat/errors/chatnotexists.tpl.php');
     }
@@ -102,7 +103,13 @@ try {
 } catch(Exception $e) {
    $tpl->setFile('lhchat/errors/chatnotexists.tpl.php');
 }
-
+if (isset($Params['user_parameters_unordered']['fullheight']) && $Params['user_parameters_unordered']['fullheight'] == 'true') {
+    $Result['fullheight'] = true;
+    $tpl->set('fullheight', true);
+} else {
+    $Result['fullheight'] = false;
+    $tpl->set('fullheight', false);
+}
 $Result['content'] = $tpl->fetch();
 $Result['pagelayout'] = 'widget';
 $Result['pagelayout_css_append'] = 'widget-chat';

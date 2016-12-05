@@ -15,7 +15,8 @@ var LHCCoBrowser = (function() {
 		this.selectorInitialized = false;
 		this.initialiseBlock = true;
 		this.shareStyleStatus = "border-radius:3px;cursor:pointer;position:fixed;top:5px;right:5px;padding:5px;z-index:9999;text-align:center;font-weight:bold;background-color:rgba(140, 227, 253, 0.53);font-family:arial;font-size:12px;";
-		
+		this.formsenabled = typeof params['formsenabled'] != 'undefined' ? params['formsenabled'] : true;
+
 		this.trans = {};
 		
 		if (params['url']) {
@@ -606,7 +607,7 @@ var LHCCoBrowser = (function() {
 			} else {
 				console.log('not found');
 			}			
-		} else if (msg[1] == 'fillform') {				
+		} else if (msg[1] == 'fillform' && this.formsenabled) {
 			var data = msg[2].split('__SPLIT__');
 			var value = data[0].replace(new RegExp('_SEL_','g'),':');
 			var selectorData = data[1].replace(new RegExp('_SEL_','g'),':');
@@ -641,7 +642,7 @@ var LHCCoBrowser = (function() {
 			};
 			
 			
-		} else if (msg[1] == 'changeselect') {				
+		} else if (msg[1] == 'changeselect' && this.formsenabled) {
 			var data = msg[2].split('__SPLIT__');
 			var selectorData = data[1].replace(new RegExp('_SEL_','g'),':');			
 			var value = data[0];
@@ -667,7 +668,6 @@ var LHCCoBrowser = (function() {
 				}
 			};
 		}
-		
 	};
 	
 	LHCCoBrowser.prototype.mouseEventListener = function(e) {
@@ -818,16 +818,25 @@ var LHCCoBrowser = (function() {
 		this.sendCommands.push(msg);
 		if (this.updateTimeout === null) {
 			this.updateTimeout = setTimeout(function() {
-				
+
 				if (window.XDomainRequest) xhr = new XDomainRequest();
 				else if (window.XMLHttpRequest) xhr = new XMLHttpRequest();
-				else xhr = new ActiveXObject("Microsoft.XMLHTTP");								
-				xhr.open("POST", _this.url, true);				
+				else xhr = new ActiveXObject("Microsoft.XMLHTTP");
+				xhr.open("POST", _this.url, true);
 				if (typeof xhr.setRequestHeader !== 'undefined'){
 					xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
 				};
 				xhr.send("data=" + encodeURIComponent(lh_inst.JSON.stringify(_this.sendCommands)));
-				
+
+				xhr.onload = function() {
+					var response = lh_inst.JSON.parse(xhr.responseText);
+					// stop mirroring if initialize request return an error
+					if (response !== "undefined" && response.disableShare == "true") {
+						alert(response.error_msg);
+						_this.stopMirroring();
+					}
+				};
+
 				_this.sendCommands = [];
 				_this.updateTimeout = null;
 			}, this.isNodeConnected === true ? 0 : 500); // Send grouped changes every 0.5 seconds
@@ -905,9 +914,10 @@ var LHCCoBrowser = (function() {
 									document.body["offsetHeight"],
 									document.documentElement["offsetHeight"]),wh:window.innerHeight}
 				});
-				
+
 				_this.sendData({
 					f : 'initialize',
+					formsEnabled: _this.formsenabled,
 					args : [ rootId, children ]
 				});
 				

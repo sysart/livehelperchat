@@ -63,16 +63,21 @@ if (trim($form->msg) != '')
     	        if ($messageUserId != -1 && $Chat->chat_locale != '' && $Chat->chat_locale_to != '') {
     	            erLhcoreClassTranslate::translateChatMsgOperator($Chat, $msg);
     	        }
+
+                erLhcoreClassChatEventDispatcher::getInstance()->dispatch('chat.before_msg_admin_saved',array('msg' => & $msg,'chat' => & $Chat));
     	        
     	        erLhcoreClassChat::getSession()->save($msg);
     	
     	        // Set last message ID
     	        if ($Chat->last_msg_id < $msg->id) {
     	        	
-    	        	$stmt = $db->prepare('UPDATE lh_chat SET status = :status, user_status = :user_status, last_msg_id = :last_msg_id WHERE id = :id');
+    	        	$stmt = $db->prepare('UPDATE lh_chat SET status = :status, user_status = :user_status, last_msg_id = :last_msg_id, last_op_msg_time = :last_op_msg_time, has_unread_op_messages = :has_unread_op_messages, unread_op_messages_informed = :unread_op_messages_informed WHERE id = :id');
     	        	$stmt->bindValue(':id',$Chat->id,PDO::PARAM_INT);
     	        	$stmt->bindValue(':last_msg_id',$msg->id,PDO::PARAM_INT);
-    	        		        	
+    	        	$stmt->bindValue(':last_op_msg_time',time(),PDO::PARAM_INT);
+    	        	$stmt->bindValue(':has_unread_op_messages',1,PDO::PARAM_INT);
+    	        	$stmt->bindValue(':unread_op_messages_informed',0,PDO::PARAM_INT);
+    	        	
     	        	if ($userData->invisible_mode == 0 && $messageUserId > 0) { // Change status only if it's not internal command
     		        	if ($Chat->status == erLhcoreClassModelChat::STATUS_PENDING_CHAT) {
     		        		$Chat->status = erLhcoreClassModelChat::STATUS_ACTIVE_CHAT;        		

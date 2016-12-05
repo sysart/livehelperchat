@@ -2,62 +2,6 @@
   <context>
     <name>listchatconfig</name>
     <message>
-      <source/>
-      <translation type="unfinished"/>
-    </message>
-    <message>
-      <source/>
-      <translation type="unfinished"/>
-    </message>
-    <message>
-      <source/>
-      <translation type="unfinished"/>
-    </message>
-    <message>
-      <source>List online operators.</source>
-      <translation>Κατάλογος σε απευθείας σύνδεση φορείς.</translation>
-    </message>
-    <message>
-      <source/>
-      <translation type="unfinished"/>
-    </message>
-    <message>
-      <source/>
-      <translation type="unfinished"/>
-    </message>
-    <message>
-      <source/>
-      <translation type="unfinished"/>
-    </message>
-    <message>
-      <source/>
-      <translation type="unfinished"/>
-    </message>
-    <message>
-      <source/>
-      <translation type="unfinished"/>
-    </message>
-    <message>
-      <source/>
-      <translation type="unfinished"/>
-    </message>
-    <message>
-      <source>Product module is enabled</source>
-      <translation type="unfinished"/>
-    </message>
-    <message>
-      <source/>
-      <translation type="unfinished"/>
-    </message>
-    <message>
-      <source/>
-      <translation type="unfinished"/>
-    </message>
-    <message>
-      <source/>
-      <translation type="unfinished"/>
-    </message>
-    <message>
       <source>How many days voting widget should not be expanded after last show</source>
       <translation>Πόσες ημέρες ψηφοφορίας widget δεν θα πρέπει να επεκταθεί μετά από την τελευταία εμφάνιση</translation>
     </message>
@@ -254,12 +198,16 @@
       <translation>Απενεργοποιήσετε την εκτύπωση της συνομιλίας</translation>
     </message>
     <message>
-      <source>Disable option in widget to open new window. Restore icon will be hidden</source>
-      <translation>Απενεργοποιήστε την επιλογή στο widget για να ανοίξετε νέο παράθυρο. Αποκατασταθεί η εικόνα θα να είμαι hidden</translation>
+      <source>Hide &apos;New Window&apos; option in Connector Widget</source>
+      <translation type="unfinished"/>
     </message>
     <message>
       <source>Disable JS execution in Co-Browsing operator window</source>
       <translation>Απενεργοποιήσετε την εκτέλεση JS σε ομο-κοιτάζοντας βιαστικά το παράθυρο του χειριστή</translation>
+    </message>
+    <message>
+      <source>Disable iframes in sharing mode</source>
+      <translation type="unfinished"/>
     </message>
     <message>
       <source>Disable HMTL5 storage, check it if your site is switching between http and https</source>
@@ -390,6 +338,29 @@
     <message>
       <source>Updated!</source>
       <translation>Ενημέρωση!</translation>
+    </message>
+  </context>
+  <context>
+    <name>survey/form</name>
+    <message>
+      <source>Add option</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Enter a possible answer to your question here...</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Enable stars</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Enable question</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Enable question with an answers</source>
+      <translation type="unfinished"/>
     </message>
   </context>
   <context>
@@ -706,8 +677,8 @@
       <translation>Χρειάζεστε βοήθεια;</translation>
     </message>
     <message>
-      <source>Our staff is always ready to help</source>
-      <translation>Το προσωπικό μας είναι πάντα έτοιμο να βοηθήσει</translation>
+      <source>Our staff are always ready to help</source>
+      <translation type="unfinished"/>
     </message>
     <message>
       <source>Live help is offline...</source>
@@ -819,6 +790,10 @@
     <message>
       <source>Identifier, for what identifier this message should be shown, leave empty for all</source>
       <translation>Αναγνωριστικό, για ποιο προσδιοριστικό πρέπει να εμφανιστεί αυτό το μήνυμα, αφήστε κενό για όλους</translation>
+    </message>
+    <message>
+      <source>Tag</source>
+      <translation type="unfinished"/>
     </message>
     <message>
       <source>Matched times</source>
@@ -1153,6 +1128,14 @@
     <message>
       <source>Invisible, only JS API will be included</source>
       <translation>Αόρατο, μόνο JS API θα πρέπει να περιλαμβάνονται</translation>
+    </message>
+    <message>
+      <source>Full height right</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Full height left</source>
+      <translation type="unfinished"/>
     </message>
     <message>
       <source>Popup window width</source>
@@ -1539,10 +1522,6 @@
   <context>
     <name>department/edit</name>
     <message>
-      <source>Priority</source>
-      <translation>Προτεραιότητα</translation>
-    </message>
-    <message>
       <source>Any</source>
       <translation>Κάθε</translation>
     </message>
@@ -1801,6 +1780,18 @@
       <translation>Οθόνη μοιράζομαι</translation>
     </message>
     <message>
+      <source>Print</source>
+      <translation>Εκτύπωση</translation>
+    </message>
+    <message>
+      <source>Please enter a URL</source>
+      <translation>Πληκτρολογήστε μια διεύθυνση URL</translation>
+    </message>
+    <message>
+      <source>Redirect user to another url</source>
+      <translation>Ανακατευθύνει το χρήστη σε ένα άλλο url</translation>
+    </message>
+    <message>
       <source>Choose other than default recognition language</source>
       <translation>Επιλέξτε εκτός από την προεπιλεγμένη γλώσσα αναγνώρισης</translation>
     </message>
@@ -1871,18 +1862,6 @@
     <message>
       <source>Redirect user to contact form.</source>
       <translation>Ανακατεύθυνση χρήστη για την φόρμα επικοινωνίας.</translation>
-    </message>
-    <message>
-      <source>Print</source>
-      <translation>Εκτύπωση</translation>
-    </message>
-    <message>
-      <source>Please enter a URL</source>
-      <translation>Πληκτρολογήστε μια διεύθυνση URL</translation>
-    </message>
-    <message>
-      <source>Redirect user to another url</source>
-      <translation>Ανακατευθύνει το χρήστη σε ένα άλλο url</translation>
     </message>
     <message>
       <source>Department</source>
@@ -2008,6 +1987,18 @@
       <source>has accepted the chat!</source>
       <translation>έχει αποδεχθεί το chat!</translation>
     </message>
+    <message>
+      <source>Auto responder got error</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Form data not valid</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Has no access to this chat</source>
+      <translation type="unfinished"/>
+    </message>
   </context>
   <context>
     <name>chat/translation</name>
@@ -2108,28 +2099,16 @@
       <translation>Δεν μπόρεσε να εντοπίσει μια γλώσσα</translation>
     </message>
     <message>
-      <source>Could not detect language</source>
-      <translation>Δεν θα μπορούσα να ανιχνεύσει γλώσσα</translation>
-    </message>
-    <message>
       <source>Could not translate</source>
       <translation>Δεν θα μπορούσε να μεταφράσει</translation>
     </message>
     <message>
+      <source>Could not detect language</source>
+      <translation>Δεν θα μπορούσα να ανιχνεύσει γλώσσα</translation>
+    </message>
+    <message>
       <source>Translation configuration</source>
       <translation>Μετάφραση διαμόρφωση</translation>
-    </message>
-    <message>
-      <source>Chat messages automatic translations has been stopped</source>
-      <translation>Διακόπηκε chat μηνύματα αυτόματες μεταφράσεις</translation>
-    </message>
-    <message>
-      <source>Messages has been translated</source>
-      <translation>Έχει μεταφραστεί μηνύματα</translation>
-    </message>
-    <message>
-      <source>Please choose translation languages manually and click Auto translate</source>
-      <translation>Παρακαλώ επιλέξτε μετάφραση γλώσσες με μη αυτόματο τρόπο και κλικ αυτόματη μετάφραση</translation>
     </message>
   </context>
   <context>
@@ -2301,8 +2280,8 @@
       <translation>Στιγμιότυπο οθόνης</translation>
     </message>
     <message>
-      <source>Screenshot ready...</source>
-      <translation>Screenshot έτοιμη...</translation>
+      <source>Screenshot store error</source>
+      <translation type="unfinished"/>
     </message>
   </context>
   <context>
@@ -2582,10 +2561,6 @@
       <translation>Το αίτημά σας δεν διεκπεραιώθηκε όπως ήταν αναμενόμενο - αλλά μην ανησυχείτε δεν ήταν το ελάττωμά σας. Παρακαλείσθε να υποβάλει εκ νέου το αίτημά σας. Εάν αντιμετωπίζετε το ίδιο ζήτημα που θα πρέπει να επικοινωνήσετε μαζί μας μέσω άλλων μέσων.</translation>
     </message>
     <message>
-      <source>Please choose a star</source>
-      <translation>Παρακαλώ επιλέξτε ένα αστέρι</translation>
-    </message>
-    <message>
       <source>Please enter a message, max characters</source>
       <translation>Παρακαλούμε εισάγετε ένα μήνυμα, max χαρακτήρες</translation>
     </message>
@@ -2656,20 +2631,20 @@
       <translation>Ενεργοποίηση/Απενεργοποίηση ήχου για νέα μηνύματα από τον φορέα εκμετάλλευσης</translation>
     </message>
     <message>
-      <source>Enable/Disable sound about new messages from users</source>
-      <translation>Ενεργοποίηση/Απενεργοποίηση ήχων νέων μηνυμάτων από τους χρήστες</translation>
-    </message>
-    <message>
-      <source>Enable/Disable sound about new pending chats</source>
-      <translation>Ενεργοποίηση/Απενεργοποίηση ήχου για νέα εν αναμονή συνομιλία</translation>
-    </message>
-    <message>
       <source>Change my visibility to visible/invisible</source>
       <translation>Αλλάξετε την προβολή μου σε ορατό/αόρατο</translation>
     </message>
     <message>
       <source>Change my status to online/offline</source>
       <translation>Αλλαγή κατάστασης μου σε απευθείας σύνδεση/χωρίς σύνδεση</translation>
+    </message>
+    <message>
+      <source>Enable/Disable sound about new messages from users</source>
+      <translation>Ενεργοποίηση/Απενεργοποίηση ήχων νέων μηνυμάτων από τους χρήστες</translation>
+    </message>
+    <message>
+      <source>Enable/Disable sound about new pending chats</source>
+      <translation>Ενεργοποίηση/Απενεργοποίηση ήχου για νέα εν αναμονή συνομιλία</translation>
     </message>
   </context>
   <context>
@@ -3115,6 +3090,10 @@
       <translation>Σύρετε ένα δείκτη όπου θέλετε να έχετε το χάρτη που κεντροθετείται από προεπιλογή. Αποθηκεύεται επίσης ζουμ.</translation>
     </message>
     <message>
+      <source>Google Maps API key, saved automatically. After pasting the key, refresh the page.</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
       <source>Settings updated</source>
       <translation>Οι ρυθμίσεις ενημερώθηκαν</translation>
     </message>
@@ -3538,10 +3517,6 @@
       <translation>Πρότυπα ηλεκτρονικού ταχυδρομείου</translation>
     </message>
     <message>
-      <source>Languages configuration</source>
-      <translation>Διαμόρφωση γλώσσες</translation>
-    </message>
-    <message>
       <source>GEO detection configuration</source>
       <translation>Ρύθμιση παραμέτρων ανίχνευσης GEO</translation>
     </message>
@@ -3606,6 +3581,10 @@
       <translation>GEO προσαρμογής</translation>
     </message>
     <message>
+      <source>Languages configuration</source>
+      <translation>Διαμόρφωση γλώσσες</translation>
+    </message>
+    <message>
       <source>Maintenance</source>
       <translation>Συντήρηση</translation>
     </message>
@@ -3664,6 +3643,18 @@
     <message>
       <source>Default theme</source>
       <translation>Προεπιλεγμένο θέμα</translation>
+    </message>
+    <message>
+      <source>Back office theming</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Admin themes</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Default admin theme</source>
+      <translation type="unfinished"/>
     </message>
     <message>
       <source>Automatic translations</source>
@@ -4437,6 +4428,14 @@
       <translation type="unfinished"/>
     </message>
     <message>
+      <source>Please enter resource identifier</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Add resource</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
       <source>Minimum 40 characters for encryption key!</source>
       <translation type="unfinished"/>
     </message>
@@ -4984,10 +4983,6 @@
   <context>
     <name>chat/transferchat</name>
     <message>
-      <source>Departments</source>
-      <translation>Τμήματα</translation>
-    </message>
-    <message>
       <source>Transfer to a user</source>
       <translation>Μεταφορά σε χρήστη</translation>
     </message>
@@ -5381,6 +5376,10 @@
   <context>
     <name>cobrowse/browse</name>
     <message>
+      <source>Click blue eye at the top to request screen share</source>
+      <translation>Κάντε κλικ στο μπλε μάτι στην κορυφή να ζητήσει μερίδιο οθόνη</translation>
+    </message>
+    <message>
       <source>Request screen share</source>
       <translation>Αίτηση οθόνη μερίδιο</translation>
     </message>
@@ -5399,10 +5398,6 @@
     <message>
       <source>On click navigate user browser</source>
       <translation>Στη επιλέξτε πλοήγηση πρόγραμμα περιήγησης χρήστη</translation>
-    </message>
-    <message>
-      <source>Click blue eye at the top to request screen share</source>
-      <translation>Κάντε κλικ στο μπλε μάτι στην κορυφή να ζητήσει μερίδιο οθόνη</translation>
     </message>
     <message>
       <source>Screen sharing session has finished</source>
@@ -5446,26 +5441,6 @@
   </context>
   <context>
     <name>user/account</name>
-    <message>
-      <source>Please enter a username!</source>
-      <translation>Παρακαλούμε εισάγετε ένα όνομα χρήστη!</translation>
-    </message>
-    <message>
-      <source>User exists!</source>
-      <translation>Υπάρχει το χρήστη!</translation>
-    </message>
-    <message>
-      <source>Wrong email address</source>
-      <translation>Λάθος διεύθυνση ηλεκτρονικού ταχυδρομείου</translation>
-    </message>
-    <message>
-      <source>Please enter a name</source>
-      <translation>Παρακαλώ εισάγεται ένα όνομα</translation>
-    </message>
-    <message>
-      <source>Passwords mismatch</source>
-      <translation>Ο κωδικός πρόσβασης δεν ταιριάζει</translation>
-    </message>
     <message>
       <source>Updated</source>
       <translation>Ενημέρωση</translation>
@@ -6053,6 +6028,44 @@
     </message>
   </context>
   <context>
+    <name>paidchat/expiredchat</name>
+    <message>
+      <source>Chat</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Chat was closed.</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Invalid hash</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Removed paid chat</source>
+      <translation type="unfinished"/>
+    </message>
+  </context>
+  <context>
+    <name>paidchat/settings</name>
+    <message>
+      <source>Paid chat settings</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Enabled</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>User can not access old chat if chat is closed</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Secret hash, used for verification</source>
+      <translation type="unfinished"/>
+    </message>
+  </context>
+  <context>
     <name>permission/editrole</name>
     <message>
       <source>Edit role</source>
@@ -6305,6 +6318,60 @@
     <message>
       <source>System configuration</source>
       <translation>Διαμόρφωση του συστήματος</translation>
+    </message>
+  </context>
+  <context>
+    <name>lhproduct/index</name>
+    <message>
+      <source>Products</source>
+      <translation type="unfinished"/>
+    </message>
+  </context>
+  <context>
+    <name>theme/index</name>
+    <message>
+      <source>Products</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Default theme</source>
+      <translation>Προεπιλεγμένο θέμα</translation>
+    </message>
+    <message>
+      <source>Theme</source>
+      <translation>Θέμα</translation>
+    </message>
+    <message>
+      <source>Widget themes</source>
+      <translation>Θέματα widget</translation>
+    </message>
+    <message>
+      <source>Import a new theme</source>
+      <translation>Εισάγει ένα νέο θέμα</translation>
+    </message>
+    <message>
+      <source>Admin</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Admin themes</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Default admin theme</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Rest API</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Themes</source>
+      <translation>Θέματα</translation>
+    </message>
+    <message>
+      <source>Import theme</source>
+      <translation>Θέμα εισαγωγής</translation>
     </message>
   </context>
   <context>
@@ -6573,6 +6640,17 @@
     </message>
   </context>
   <context>
+    <name>lhrestapi/index</name>
+    <message>
+      <source>Rest API</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Rest API Keys</source>
+      <translation type="unfinished"/>
+    </message>
+  </context>
+  <context>
     <name>speech/language</name>
     <message>
       <source>Choose speech recognition language for this chat</source>
@@ -6621,39 +6699,43 @@
       <translation>Τελεστής</translation>
     </message>
     <message>
-      <source>Stars</source>
-      <translation>Αστέρια</translation>
-    </message>
-    <message>
       <source>Time</source>
       <translation>Χρόνος</translation>
+    </message>
+    <message>
+      <source>View information</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Collected information</source>
+      <translation type="unfinished"/>
     </message>
     <message>
       <source>Department name</source>
       <translation>Το πεδίο ονόματος τμήματος</translation>
     </message>
+    <message>
+      <source>Stars</source>
+      <translation>Αστέρια</translation>
+    </message>
   </context>
   <context>
     <name>survey/fill</name>
-    <message>
-      <source>star</source>
-      <translation>αστέρι</translation>
-    </message>
-    <message>
-      <source>stars</source>
-      <translation>αστέρια</translation>
-    </message>
     <message>
       <source>Preview chat</source>
       <translation>Προεπισκόπηση συνομιλίας</translation>
     </message>
     <message>
-      <source>How well did we do?</source>
-      <translation>Πόσο καλά κάναμε;</translation>
+      <source>star</source>
+      <translation>αστέρι</translation>
     </message>
     <message>
       <source>Poor</source>
       <translation>Κακή</translation>
+    </message>
+    <message>
+      <source>stars</source>
+      <translation>αστέρια</translation>
     </message>
     <message>
       <source>Excellent</source>
@@ -6855,14 +6937,6 @@
   <context>
     <name>user/edit</name>
     <message>
-      <source>Please enter a name</source>
-      <translation>Παρακαλώ εισάγεται ένα όνομα</translation>
-    </message>
-    <message>
-      <source>Passwords mismatch</source>
-      <translation>Ο κωδικός πρόσβασης δεν ταιριάζει</translation>
-    </message>
-    <message>
       <source>Server default time zone</source>
       <translation>Διακομιστή προεπιλεγμένη ζώνη ώρας</translation>
     </message>
@@ -6994,38 +7068,92 @@
     </message>
   </context>
   <context>
-    <name>theme/index</name>
+    <name>icclicktocallform/form</name>
     <message>
-      <source>Products</source>
+      <source>Settings</source>
       <translation type="unfinished"/>
     </message>
     <message>
-      <source>Default theme</source>
-      <translation>Προεπιλεγμένο θέμα</translation>
-    </message>
-    <message>
-      <source>Theme</source>
-      <translation>Θέμα</translation>
-    </message>
-    <message>
-      <source>Widget themes</source>
-      <translation>Θέματα widget</translation>
-    </message>
-    <message>
-      <source>Import a new theme</source>
-      <translation>Εισάγει ένα νέο θέμα</translation>
-    </message>
-    <message>
-      <source>Rest API</source>
+      <source>Header settings</source>
       <translation type="unfinished"/>
     </message>
     <message>
-      <source>Themes</source>
-      <translation>Θέματα</translation>
+      <source>Header css</source>
+      <translation type="unfinished"/>
     </message>
     <message>
-      <source>Import theme</source>
-      <translation>Θέμα εισαγωγής</translation>
+      <source>Static content</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>JS</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>CSS</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Name</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Header content</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Resource name for replacement</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Empty...</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Invalid CSRF token!</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Please enter a name</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>File not chosen for</source>
+      <translation type="unfinished"/>
+    </message>
+  </context>
+  <context>
+    <name>lhtheme/admin</name>
+    <message>
+      <source>New admin theme</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Admin themes</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Name</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Default admin theme</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Edit admin theme</source>
+      <translation type="unfinished"/>
+    </message>
+  </context>
+  <context>
+    <name>admintheme/form</name>
+    <message>
+      <source>Edit theme</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Updated</source>
+      <translation type="unfinished"/>
     </message>
   </context>
   <context>
@@ -7040,6 +7168,10 @@
     <message>
       <source>Default theme was set</source>
       <translation>Προεπιλεγμένο θέμα ορίστηκε</translation>
+    </message>
+    <message>
+      <source>Default admin theme was set</source>
+      <translation type="unfinished"/>
     </message>
     <message>
       <source>Import theme</source>
@@ -7068,30 +7200,6 @@
   </context>
   <context>
     <name>user/new</name>
-    <message>
-      <source>Please choose a default user group</source>
-      <translation>Παρακαλώ επιλέξτε μια προκαθορισμένη ομάδα χρήστη</translation>
-    </message>
-    <message>
-      <source>Wrong email address</source>
-      <translation>Λάθος διεύθυνση ηλεκτρονικού ταχυδρομείου</translation>
-    </message>
-    <message>
-      <source>Please enter a name</source>
-      <translation>Παρακαλώ εισάγεται ένα όνομα</translation>
-    </message>
-    <message>
-      <source>Please enter a username</source>
-      <translation>Παρακαλώ εισάγεται ένα όνομα χρήστη</translation>
-    </message>
-    <message>
-      <source>User exists</source>
-      <translation>Ο χρήστης υπάρχει</translation>
-    </message>
-    <message>
-      <source>Passwords mismatch</source>
-      <translation>Ο κωδικός πρόσβασης δεν ταιριάζει</translation>
-    </message>
     <message>
       <source>Invisible mode</source>
       <translation>Invisible μοντέλο</translation>
@@ -7370,8 +7478,16 @@
       <translation>Αποσυνδεθήκατε επειδή κάποιος άλλος χρήστης συνδεδεμένος στο ίδιο λογαριασμό</translation>
     </message>
     <message>
+      <source>CSFR token is invalid, try to resubmit form</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
       <source>Incorrect username or password</source>
       <translation>Εσφαλμένο όνομα χρήστη ή κωδικού πρόσβασης</translation>
+    </message>
+    <message>
+      <source>Logged in successfully</source>
+      <translation type="unfinished"/>
     </message>
   </context>
   <context>
@@ -7457,6 +7573,60 @@
     <message>
       <source>Message seen</source>
       <translation>Μήνυμα δει</translation>
+    </message>
+  </context>
+  <context>
+    <name>abstract/product</name>
+    <message>
+      <source>Name</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Priority</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Product</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>API Key</source>
+      <translation type="unfinished"/>
+    </message>
+  </context>
+  <context>
+    <name>abstract/survey</name>
+    <message>
+      <source>Name</source>
+      <translation>Όνομα</translation>
+    </message>
+    <message>
+      <source>Max stars for feedback</source>
+      <translation>Max αστέρια για ανατροφοδότηση</translation>
+    </message>
+    <message>
+      <source>Max stars pos</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Title for evaluation</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Enabled</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Title for plain question</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Title for custom questions</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Survey</source>
+      <translation>Έρευνα</translation>
     </message>
   </context>
   <context>
@@ -7585,6 +7755,37 @@
     <message>
       <source>Please enter a valid to date range!</source>
       <translation>Παρακαλώ εισάγετε μια έγκυρη ημερομηνία φάσμα!</translation>
+    </message>
+  </context>
+  <context>
+    <name>user/validator</name>
+    <message>
+      <source>Please enter a username</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>User exists</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Passwords mismatch</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>User action type not set</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Wrong email address</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Please enter a name</source>
+      <translation type="unfinished"/>
+    </message>
+    <message>
+      <source>Please choose a default user group</source>
+      <translation type="unfinished"/>
     </message>
   </context>
   <context>
@@ -7750,21 +7951,6 @@
     </message>
   </context>
   <context>
-    <name>abstract/survey</name>
-    <message>
-      <source>Name</source>
-      <translation>Όνομα</translation>
-    </message>
-    <message>
-      <source>Max stars for feedback</source>
-      <translation>Max αστέρια για ανατροφοδότηση</translation>
-    </message>
-    <message>
-      <source>Survey</source>
-      <translation>Έρευνα</translation>
-    </message>
-  </context>
-  <context>
     <name>chat/accepttrasnfer</name>
     <message>
       <source>has joined the chat!</source>
@@ -7856,112 +8042,6 @@
     <message>
       <source>Please enter valid file type!</source>
       <translation>Παρακαλούμε, εισάγετε έγκυρο αρχείο τύπου!</translation>
-    </message>
-  </context>
-  <context>
-    <name>lhproduct/index</name>
-    <message>
-      <source>Products</source>
-      <translation type="unfinished"/>
-    </message>
-  </context>
-  <context>
-    <name>abstract/product</name>
-    <message>
-      <source>Name</source>
-      <translation type="unfinished"/>
-    </message>
-    <message>
-      <source>Priority</source>
-      <translation type="unfinished"/>
-    </message>
-    <message>
-      <source>Product</source>
-      <translation type="unfinished"/>
-    </message>
-    <message>
-      <source>API Key</source>
-      <translation type="unfinished"/>
-    </message>
-  </context>
-  <context>
-    <name>user/validator</name>
-    <message>
-      <source>Please enter a username</source>
-      <translation type="unfinished"/>
-    </message>
-    <message>
-      <source>User exists</source>
-      <translation type="unfinished"/>
-    </message>
-    <message>
-      <source>Passwords mismatch</source>
-      <translation type="unfinished"/>
-    </message>
-    <message>
-      <source>User action type not set</source>
-      <translation type="unfinished"/>
-    </message>
-    <message>
-      <source>Wrong email address</source>
-      <translation type="unfinished"/>
-    </message>
-    <message>
-      <source>Please enter a name</source>
-      <translation type="unfinished"/>
-    </message>
-    <message>
-      <source>Please choose a default user group</source>
-      <translation type="unfinished"/>
-    </message>
-  </context>
-  <context>
-    <name>paidchat/expiredchat</name>
-    <message>
-      <source>Chat</source>
-      <translation type="unfinished"/>
-    </message>
-    <message>
-      <source>Chat was closed.</source>
-      <translation type="unfinished"/>
-    </message>
-    <message>
-      <source>Invalid hash</source>
-      <translation type="unfinished"/>
-    </message>
-    <message>
-      <source>Removed paid chat</source>
-      <translation type="unfinished"/>
-    </message>
-  </context>
-  <context>
-    <name>paidchat/settings</name>
-    <message>
-      <source>Paid chat settings</source>
-      <translation type="unfinished"/>
-    </message>
-    <message>
-      <source>Enabled</source>
-      <translation type="unfinished"/>
-    </message>
-    <message>
-      <source>User can not access old chat if chat is closed</source>
-      <translation type="unfinished"/>
-    </message>
-    <message>
-      <source>Secret hash, used for verification</source>
-      <translation type="unfinished"/>
-    </message>
-  </context>
-  <context>
-    <name>lhrestapi/index</name>
-    <message>
-      <source>Rest API</source>
-      <translation type="unfinished"/>
-    </message>
-    <message>
-      <source>Rest API Keys</source>
-      <translation type="unfinished"/>
     </message>
   </context>
 </TS>

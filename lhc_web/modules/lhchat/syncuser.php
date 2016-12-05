@@ -35,10 +35,29 @@ if (is_object($chat) && $chat->hash == $Params['user_parameters']['hash'])
 	$db->beginTransaction();
 	try {
 		while (true) {
-			
+
+
 			// Auto responder
-			if ($chat->status == erLhcoreClassModelChat::STATUS_PENDING_CHAT && $chat->wait_timeout_send <= 0 && $chat->wait_timeout > 0 && !empty($chat->timeout_message) && (time() - $chat->time) > ($chat->wait_timeout*($chat->wait_timeout_repeat-(abs($chat->wait_timeout_send))))) {
-				erLhcoreClassChatWorkflow::timeoutWorkflow($chat);
+            if ($chat->status == erLhcoreClassModelChat::STATUS_PENDING_CHAT && $chat->wait_timeout_send <= 0 && $chat->wait_timeout > 0 && !empty($chat->timeout_message) && (time() - $chat->time) > ($chat->wait_timeout*($chat->wait_timeout_repeat-(abs($chat->wait_timeout_send))))) {
+                $errors = array();
+                erLhcoreClassChatEventDispatcher::getInstance()->dispatch('chat.before_auto_responder_triggered',array('chat' => & $chat, 'errors' => & $errors));
+
+                if (empty($errors)) {
+                    erLhcoreClassChatWorkflow::timeoutWorkflow($chat);
+                } else {
+                    $msg = new erLhcoreClassModelmsg();
+                    $msg->msg = erTranslationClassLhTranslation::getInstance()->getTranslation('chat/adminchat','Auto responder got error').': '.implode('; ', $errors);
+                    $msg->chat_id = $chat->id;
+                    $msg->user_id = -1;
+                    $msg->time = time();
+
+                    if ($chat->last_msg_id < $msg->id) {
+                        $chat->last_msg_id = $msg->id;
+                    }
+
+                    erLhcoreClassChat::getSession()->save($msg);
+                }
+
 			}
 		
 			if ($chat->status == erLhcoreClassModelChat::STATUS_PENDING_CHAT && $chat->transfer_if_na == 1 && $chat->transfer_timeout_ts < (time()-$chat->transfer_timeout_ac) ) {
@@ -164,6 +183,12 @@ if (is_object($chat) && $chat->hash == $Params['user_parameters']['hash'])
 		    	$saveChat = true;
 		    }
 		    
+		    if ($chat->has_unread_op_messages == 1)
+		    {
+		    	$chat->unread_op_messages_informed = 0;
+		    	$chat->has_unread_op_messages = 0;
+		    	$saveChat = true;
+		    }
 		    
 		    if ($saveChat === true) {
 		    	$chat->updateThis();
